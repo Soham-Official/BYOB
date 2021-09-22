@@ -1,0 +1,7 @@
+.homepage {
+  background: url(../Images/HomepageBulb.png);
+  min-height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

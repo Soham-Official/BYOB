@@ -1,0 +1,13 @@
+svg {
+  width: 400px;
+  height: 100px;
+
+  display: inline-block;
+}
+.loader {
+  min-height: 100vh;
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+}
