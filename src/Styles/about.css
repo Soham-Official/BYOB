@@ -1,0 +1,32 @@
+.aboutpage {
+  min-height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #212121;
+
+  /* background: url("../Videos/about.mp4"); */
+}
+
+.aboutTopText {
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+}
+.aboutLowerText {
+  font-size: 90px;
+  line-height: 80px;
+}
+.lightfont {
+  font-weight: lighter;
+}
+.right_home_body {
+  margin-top: 0vh;
+}

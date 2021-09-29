@@ -4,4 +4,61 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #212121;
+}
+.homeText {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+}
+.left_home_body {
+  padding: 0.5em;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin-top: -280px;
+  line-height: 15px;
+  height: 75px;
+}
+.right_home_body {
+  margin-top: 100px;
+}
+.font-face-gb {
+  font-family: "GothamBook";
+}
+.ideas {
+  font-size: 90px;
+}
+.font-face-gl {
+  font-family: "GothamLight";
+}
+.into {
+  font-size: 45px;
+}
+.font-face-md {
+  font-family: "GothamMedium";
+}
+.reality {
+  font-size: 120px;
+}
+.we_shape {
+  font-size: 20px;
+}
+.right_home_body {
+  line-height: 70px;
+}
+.homeRightCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icon {
+  position: absolute;
+  left: 92%;
+}
+.homeLogo {
+  width: 100px;
+  height: 80px;
+  color: #fff;
 }
