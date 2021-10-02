@@ -10,13 +10,13 @@ const Home = () => {
       <div className="homepage p-4">
         <div className="row">
           <div className="container">
-            <div className="d-flex justify-content-between ">
+            <div className="d-flex justify-content-between homeNav">
               <div>
-                <div className="logoblack">
+                <div className="logoblack1">
                   <Logo />
                 </div>
               </div>
-              <div className="logoblack">
+              <div className="logoblack2">
                 <div>
                   <Hamburger />
                 </div>
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div className="container">
           <div className="row homebody">
-            <div className="col-md-6 d-flex justify-content-start">
+            <div className="col-md-6 leftCol">
               <div className="homeText">
                 <div className="left_home_body font-face-gb we_shape">
                   <p>
@@ -39,22 +39,22 @@ const Home = () => {
 
                 <div className="right_home_body">
                   <p className="font-face-gb ideas">IDEAS</p>
-                  <p className="font-face-gl into">INTO</p>
+                  <p className="font-face-gl into ">INTO</p>
                   <p className="font-face-md reality">REALITY</p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 homeRightCol">
               <Link className="icon" to="/about">
-                <i class="fas fa-angle-right fa-3x"></i>
+                <i class="fas fa-angle-right fa-2x"></i>
               </Link>
             </div>
           </div>
           <div className="lowerDots">
             <svg
               id="dots"
-              width="130"
-              height="50"
+              width="95"
+              height="30"
               viewBox="0 0 618 112"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

@@ -25,7 +25,7 @@ const WhatDoWeDo = () => {
       </div>
       <div className="container">
         <div className="row homebody">
-          <div className="col-md-8 d-flex justify-content-start">
+          <div className="col-md-8 aboutBody">
             <div className="homeText">
               <div className="right_home_body">
                 <div>
@@ -48,8 +48,8 @@ const WhatDoWeDo = () => {
         <div className="lowerDots">
           <svg
             id="dots"
-            width="130"
-            height="50"
+            width="95"
+            height="30"
             viewBox="0 0 618 112"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
