@@ -25,7 +25,12 @@ const WhatDoWeDo = () => {
       </div>
       <div className="container">
         <div className="row homebody">
-          <div className="col-md-8 aboutBody">
+          <div className="col-md-1">
+            <Link className="backIcon" to="/">
+              <i class="fas fa-angle-left fa-2x"></i>
+            </Link>
+          </div>
+          <div className="col-md-9 aboutBody">
             <div className="homeText">
               <div className="right_home_body">
                 <div>
@@ -43,7 +48,7 @@ const WhatDoWeDo = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4"></div>
+          <div className="col-md-3"></div>
         </div>
         <div className="lowerDots">
           <svg

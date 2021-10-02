@@ -177,7 +177,7 @@ const Loader = () => {
           enable-background="new 0 0 0 0"
           xmlSpace="preserve"
         >
-          <circle fill="#fff" stroke="none" cx="-67" cy="30" r="5">
+          <circle fill="#fff" stroke="none" cx="-174.5" cy="30" r="5">
             <animate
               attributeName="opacity"
               dur="3s"
@@ -186,7 +186,7 @@ const Loader = () => {
               begin="0.1"
             />
           </circle>
-          <circle fill="#fff" stroke="none" cx="-7" cy="30" r="5">
+          <circle fill="#fff" stroke="none" cx="-61.2" cy="30" r="5">
             <animate
               attributeName="opacity"
               dur="3s"
@@ -195,7 +195,7 @@ const Loader = () => {
               begin="0.2"
             />
           </circle>
-          <circle fill="#fff" stroke="none" cx="53" cy="30" r="5">
+          <circle fill="#fff" stroke="none" cx="51.9" cy="30" r="5">
             <animate
               attributeName="opacity"
               dur="3s"
@@ -204,7 +204,7 @@ const Loader = () => {
               begin="0.3"
             />
           </circle>
-          <circle fill="#fff" stroke="none" cx="113" cy="30" r="5">
+          <circle fill="#fff" stroke="none" cx="165.1" cy="30" r="5">
             <animate
               attributeName="opacity"
               dur="3s"
@@ -213,7 +213,7 @@ const Loader = () => {
               begin="0.4"
             />
           </circle>
-          <circle fill="#fff" stroke="none" cx="173" cy="30" r="5">
+          <circle fill="#fff" stroke="none" cx="278" cy="30" r="5">
             <animate
               attributeName="opacity"
               dur="3s"
