@@ -1,11 +1,11 @@
 .aboutpage {
   min-height: 100vh;
-  background-position: center;
+  /* background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
-  padding-left: 2%;
-  padding-right: 2%;
-  background-color: #212121;
+  background-repeat: no-repeat; */
+  /* padding-left: 2%;
+  padding-right: 2%; */
+  /* background-color: #212121; */
 }
 
 .aboutTopText {
@@ -38,4 +38,13 @@
   margin-left: -280px;
   height: 100%;
   text-decoration: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
