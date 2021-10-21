@@ -1,0 +1,45 @@
+.contact-main {
+  background: url("../Images/2.png");
+  min-height: 100vh;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #212121;
+}
+
+.whiteBlock {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 200px;
+  height: 90vh;
+  width: 25vw;
+  border-radius: 0 0 15px 15px;
+}
+
+.hd1 {
+  color: gray;
+  font-style: italic;
+}
+
+.hd2 {
+  color: black;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.in {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.but {
+  position: absolute;
+  bottom: 200px;
+  right: 0px;
+  width: 40%;
+  text-align: center;
+}
