@@ -53,7 +53,11 @@ const WhatDoWeDo = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-3"></div>
+            <div className="col-md-3 homeRightCol">
+              <Link className="icon" to="/ourwork">
+                <i class="fas fa-angle-right fa-2x"></i>
+              </Link>
+            </div>
           </div>
           <div className="lowerDots">
             <svg
