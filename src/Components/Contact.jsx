@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
 import Hamburger from "./Hamburger";
-import { Link } from "react-router-dom";
 import "../Styles/contact.css";
 
 const Contact = () => {
@@ -35,27 +34,16 @@ const Contact = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-md-1">
-              <Link className="backIcon" to="/">
-                <i class="fas fa-angle-left fa-2x"></i>
-              </Link>
+            <div className="col-md-1"></div>
+            <div>
+              <p>Lets Work Together</p>
+              <p>REACH</p>
+              <p>US AT</p>
+              <p>hello.buildyourownbusiness@gmail.com</p>
+              <p>+91 89108 40894</p>
+              <p>+91 89615 10238</p>
+              <p></p>
             </div>
-            <div className="col-md-9 aboutBody">
-              <div className="homeText">
-                <div className="right_home_body">
-                  <div>
-                    <p className="aboutTopText ">
-                      <i className="lightfont"> WE CAN </i>
-                      <b>HELP YOU WITH</b>
-                    </p>
-                  </div>
-                  <div className="aboutLowerText">
-                    <p className="font-face-gb ">BRAND IDEATION</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3"></div>
           </div>
         </div>
       </div>
