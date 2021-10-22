@@ -48,3 +48,10 @@
   min-height: 100%;
   z-index: -1;
 }
+.backIconContact {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  text-decoration: none;
+}

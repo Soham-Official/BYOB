@@ -54,7 +54,7 @@ const WhatDoWeDo = () => {
               </div>
             </div>
             <div className="col-md-3 homeRightCol">
-              <Link className="icon" to="/ourwork">
+              <Link className="icon" to="/contact">
                 <i class="fas fa-angle-right fa-2x"></i>
               </Link>
             </div>
