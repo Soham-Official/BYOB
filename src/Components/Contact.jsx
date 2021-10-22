@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
         <div className="row contactbody">
           <div className="col-md-1">
-            <Link className="backIconContact" to="/about">
+            <Link className="backIconContact" to="/ourwork">
               <i class="fas fa-angle-left fa-2x"></i>
             </Link>
           </div>
@@ -113,6 +113,41 @@ const Contact = () => {
               COPYRIGHT ISSUED TO BYOB 2021 <sup>&#169;</sup>
             </p>
           </div>
+        </div>
+        <div className="lowerDots">
+          <svg
+            id="dots"
+            width="95"
+            height="30"
+            viewBox="0 0 742 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <Link to="/">
+              <path
+                d="M65 28C65 43.464 50.4493 56 32.5 56C14.5507 56 0 43.464 0 28C0 12.536 14.5507 0 32.5 0C50.4493 0 65 12.536 65 28Z"
+                fill="white"
+              />
+            </Link>
+            <Link to="/about">
+              <path
+                d="M246 28C246 43.464 231.449 56 213.5 56C195.551 56 181 43.464 181 28C181 12.536 195.551 0 213.5 0C231.449 0 246 12.536 246 28Z"
+                fill="#FFFDFD"
+              />
+            </Link>
+
+            <path
+              d="M542 27C542 21.4772 547.703 17 554.739 17H729.261C736.297 17 742 21.4772 742 27V28C742 33.5228 736.297 38 729.261 38H554.739C547.703 38 542 33.5228 542 28V27Z"
+              fill="white"
+            />
+
+            <Link to="/ourwork">
+              <path
+                d="M426 28C426 43.464 411.449 56 393.5 56C375.551 56 361 43.464 361 28C361 12.536 375.551 0 393.5 0C411.449 0 426 12.536 426 28Z"
+                fill="#FFFDFD"
+              />
+            </Link>
+          </svg>
         </div>
       </div>
     </div>

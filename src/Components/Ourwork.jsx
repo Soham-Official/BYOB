@@ -11,7 +11,7 @@ const Ourwork = () => {
     useState("modal-content hide");
   return (
     <div className="ourwork">
-      <Link className="backIconWorks" to="/">
+      <Link className="backIconWorks" to="/about">
         <i class="fas fa-angle-left fa-2x"></i>
       </Link>
       <div className="row aboutrow">
@@ -80,10 +80,16 @@ const Ourwork = () => {
           </div>
         </div>
       </div>
-      <Link className="forwardIconWorks" to="/ourwork">
+      <Link className="forwardIconWorks" to="/contact">
         <i class="fas fa-angle-right fa-2x"></i>
       </Link>
-      <div className={modalHide}></div>
+      <div
+        className={modalHide}
+        onClick={() => {
+          setModalHide("modal-blur hide");
+          setModalContentHide("modal-content hide");
+        }}
+      ></div>
       <div className={modalContentHide}>
         <div className="row">
           <div className="col-md-6">
@@ -97,17 +103,48 @@ const Ourwork = () => {
                 setModalContentHide("modal-content hide");
               }}
             >
-              close X
+              <i className="fa fa-close closeicon"></i>
             </p>
-            <p className="obj1 text-dark">Heading 1</p>
+            {/* <p className="obj1 text-dark">Heading 1</p>
             <p className="obj1 text-dark">Heading 2</p>
             <p className="obj1 text-dark">Heading 3</p>
-            <p className="obj1 text-dark">Heading 4</p>
+            <p className="obj1 text-dark">Heading 4</p> */}
           </div>
         </div>
       </div>
       <div className="lowerDots">
         <svg
+          id="dots"
+          width="95"
+          height="30"
+          viewBox="0 0 695 57"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <Link to="/">
+            <path
+              d="M65 28C65 43.464 50.4493 56 32.5 56C14.5507 56 0 43.464 0 28C0 12.536 14.5507 0 32.5 0C50.4493 0 65 12.536 65 28Z"
+              fill="white"
+            />
+          </Link>
+          <Link to="/about">
+            <path
+              d="M230 28C230 43.464 215.449 56 197.5 56C179.551 56 165 43.464 165 28C165 12.536 179.551 0 197.5 0C215.449 0 230 12.536 230 28Z"
+              fill="#FFFDFD"
+            />
+          </Link>
+          <path
+            d="M330 28C330 22.4772 335.703 18 342.739 18H517.261C524.297 18 530 22.4772 530 28V29C530 34.5228 524.297 39 517.261 39H342.739C335.703 39 330 34.5228 330 29V28Z"
+            fill="white"
+          />
+          <Link to="/contact">
+            <path
+              d="M695 29C695 44.464 680.449 57 662.5 57C644.551 57 630 44.464 630 29C630 13.536 644.551 1 662.5 1C680.449 1 695 13.536 695 29Z"
+              fill="#FFFDFD"
+            />
+          </Link>
+        </svg>
+        {/* <svg
           id="dots"
           width="95"
           height="30"
@@ -129,7 +166,7 @@ const Ourwork = () => {
             d="M220 56C220 50.4772 225.703 46 232.739 46H407.261C414.297 46 420 50.4772 420 56V57C420 62.5228 414.297 67 407.261 67H232.739C225.703 67 220 62.5228 220 57V56Z"
             fill="white"
           />
-        </svg>
+        </svg> */}
       </div>
     </div>
   );

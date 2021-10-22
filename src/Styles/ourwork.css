@@ -5,35 +5,48 @@
   height: 50vh;
   width: 50vw;
   background-image: url("../Images/banana.jpg");
+  background-size: 100%;
+  transition: all 0.5s ease;
+  background-size: 100%;
 }
 .img2 {
   height: 50vh;
   width: 50vw;
   background-position: center;
+  transition: all 0.5s ease;
+  background-size: 100%;
   background-image: url("../Images/cyborg.jpg");
 }
 .img3 {
   height: 50vh;
   width: 50vw;
   background-position: center;
+  transition: all 0.5s ease;
+  background-size: 100%;
   background-image: url("../Images/cyborg.jpg");
 }
 .img4 {
   height: 25vh;
   width: 25vw;
   background-position: center;
+  transition: all 0.5s ease;
+  background-size: 100%;
   background-image: url("../Images/dice.jfif");
 }
 .img5 {
   height: 25vh;
   width: 25vw;
   background-position: center;
+  transition: all 0.5s ease;
+  background-size: 100%;
   background-image: url("../Images/plague.jfif");
 }
 .img6 {
   height: 50vh;
   width: 25vw;
   background-position: center;
+  transition: all 0.5s ease;
+  background-size: 100%;
   background-image: url("../Images/banana.jpg");
 }
 .ourwork {
@@ -50,14 +63,14 @@
 .backIconWorks {
   position: absolute;
   left: 32px;
-  top: 50%;
+  top: 52.5%;
   transform: translateY(-50%);
 }
 
 .forwardIconWorks {
   position: absolute;
   right: 32px;
-  top: 50%;
+  top: 52.5%;
   transform: translateY(-50%);
 }
 
@@ -97,4 +110,20 @@
   top: 0;
   right: 0;
   color: black;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
+  background-size: 110%;
+  background-position: center;
+  cursor: pointer;
+}
+.closeicon {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  right: 50%;
 }
