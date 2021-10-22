@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import Logo from "./Logo";
 import "../Styles/ourwork.css";
 import { Link } from "react-router-dom";
+import img1 from "../Images/banana.jpg";
 
 const Ourwork = () => {
+  const [modalHide, setModalHide] = useState("modal-blur hide");
+  const [modalContentHide, setModalContentHide] =
+    useState("modal-content hide");
   return (
     <div className="ourwork">
       <Link className="backIconWorks" to="/">
         <i class="fas fa-angle-left fa-2x"></i>
       </Link>
       <div className="row aboutrow">
-        <div className="col-md-6 img1"></div>
-        <div className="col-md-6 img2"></div>
+        <div
+          className="col-md-6 img1"
+          onClick={() => {
+            setModalHide("modal-blur");
+            setModalContentHide("modal-content");
+          }}
+        ></div>
+        <div
+          className="col-md-6 img2"
+          onClick={() => {
+            setModalHide("modal-blur");
+            setModalContentHide("modal-content");
+          }}
+        ></div>
         <div className="container p-4 ourworknav">
           <div className="d-flex justify-content-between ">
             <div className="text-white">
@@ -29,21 +45,67 @@ const Ourwork = () => {
         </div>
       </div>
       <div className="row aboutrow">
-        <div className="col-md-6 img3"></div>
+        <div
+          className="col-md-6 img3"
+          onClick={() => {
+            setModalHide("modal-blur");
+            setModalContentHide("modal-content");
+          }}
+        ></div>
         <div className="col-md-6 ">
           <div className="row">
             <div className="col-md-6 ">
-              <div className="row img4"></div>
-              <div className="row img5"></div>
+              <div
+                className="row img4"
+                onClick={() => {
+                  setModalHide("modal-blur");
+                  setModalContentHide("modal-content");
+                }}
+              ></div>
+              <div
+                className="row img5"
+                onClick={() => {
+                  setModalHide("modal-blur");
+                  setModalContentHide("modal-content");
+                }}
+              ></div>
             </div>
-            <div className="col-md-6 img6"></div>
+            <div
+              className="col-md-6 img6"
+              onClick={() => {
+                setModalHide("modal-blur");
+                setModalContentHide("modal-content");
+              }}
+            ></div>
           </div>
         </div>
       </div>
-      <div className="modal"></div>
       <Link className="forwardIconWorks" to="/ourwork">
         <i class="fas fa-angle-right fa-2x"></i>
       </Link>
+      <div className={modalHide}></div>
+      <div className={modalContentHide}>
+        <div className="row">
+          <div className="col-md-6">
+            <img src={img1} alt="quickview" className="quickview" />
+          </div>
+          <div className="col-md-6">
+            <p
+              className="closeButton"
+              onClick={() => {
+                setModalHide("modal-blur hide");
+                setModalContentHide("modal-content hide");
+              }}
+            >
+              close X
+            </p>
+            <p className="obj1 text-dark">Heading 1</p>
+            <p className="obj1 text-dark">Heading 2</p>
+            <p className="obj1 text-dark">Heading 3</p>
+            <p className="obj1 text-dark">Heading 4</p>
+          </div>
+        </div>
+      </div>
       <div className="lowerDots">
         <svg
           id="dots"
