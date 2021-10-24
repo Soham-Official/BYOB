@@ -45,15 +45,15 @@ const WhatDoWeDo = () => {
                     </p>
                   </div>
                   <div className="aboutLowerText">
-                    <p className="font-face-gb ">BRAND IDEATION</p>
-                    <p className="font-face-gb ">VISUAL DESIGN</p>
-                    <p className="font-face-gb ">ARCHITECTURE</p>
-                    <p className="font-face-gb ">MARKETING</p>
+                    <p className="font-face-gb x">BRAND IDEATION</p>
+                    <p className="font-face-gb x">VISUAL DESIGN</p>
+                    <p className="font-face-gb x">ARCHITECTURE</p>
+                    <p className="font-face-gb x">MARKETING</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-3 homeRightCol">
+            <div className="col-md-2 homeRightCol">
               <Link className="icon" to="/ourwork">
                 <i class="fas fa-angle-right fa-2x"></i>
               </Link>

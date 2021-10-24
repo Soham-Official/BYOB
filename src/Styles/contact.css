@@ -1,6 +1,6 @@
 .contact-main {
   background: url("../Images/2.png");
-  min-height: 100vh;
+  height: 100vh;
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   background-color: white;
   position: absolute;
   top: 0;
-  right: 200px;
+  right: 11%;
   height: 90vh;
   width: 25vw;
   border-radius: 0 0 15px 15px;
@@ -56,7 +56,7 @@
   position: absolute;
   bottom: 50px;
   right: 0px;
-  width: 45%;
+  width: 220px;
   text-align: center;
   font-size: 15px;
   padding: 13px;
@@ -115,9 +115,20 @@
   margin-left: 49px;
 }
 .backIconContact {
-  margin-top: 67px;
-  margin-left: -10px;
+  /* margin-top: 67px; */
+  /* display: flex; */
+  position: absolute;
+  top: 2%;
+  left: 1.7%;
 }
 .hyphen {
   margin-left: 10px;
+}
+@media only screen and (max-width: 1600px) {
+  .in {
+    padding-top: 0px;
+  }
+  .in1 {
+    padding-top: 50px;
+  }
 }

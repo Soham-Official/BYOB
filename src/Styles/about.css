@@ -1,5 +1,5 @@
 .aboutpage {
-  min-height: 100vh;
+  height: 100vh;
   /* background-position: center;
   background-size: contain;
   background-repeat: no-repeat; */
@@ -22,21 +22,42 @@
   font-size: 90px;
   line-height: 80px;
 }
+@media only screen and (max-width: 1600px) {
+  .aboutLowerText {
+    font-size: 70px !important;
+  }
+  .aboutTopText {
+    font-size: 15px;
+    width: 185px;
+    height: 37px;
+  }
+}
 .lightfont {
   font-weight: lighter;
 }
 .right_home_body {
   margin-top: 0vh;
 }
-.aboutBody {
-  display: flex;
-  margin-left: -20%;
+
+@media only screen and (min-width: 1800px) {
+  .aboutBody {
+    display: flex;
+    margin-left: -20%;
+  }
 }
+@media only screen and (width: 1366px) {
+  .aboutBody {
+    display: flex;
+    margin-left: -6%;
+  }
+}
+
 .backIcon {
   display: flex;
-  align-items: center;
-  margin-left: -280px;
-  height: 100%;
+  /* align-items: center; */
+  left: 1.7%;
+  position: absolute;
+  top: 50.7%;
   text-decoration: none;
 }
 
@@ -51,7 +72,16 @@
 .backIconContact {
   display: flex;
   align-items: center;
-
   height: 100%;
   text-decoration: none;
+}
+.x {
+  transition: 0.5s ease;
+  transform: scale(1);
+  width: 100%;
+}
+.x:hover {
+  line-height: 120px;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0.98);
 }

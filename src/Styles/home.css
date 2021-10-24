@@ -1,6 +1,6 @@
 .homepage {
   background: url(../Images/HomepageBulb.png);
-  min-height: 100vh;
+  height: 100vh;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,11 +52,12 @@
 .homeRightCol {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
 }
 .icon {
   position: absolute;
   left: 98%;
+  top: 50.7%;
 }
 .homeLogo {
   width: 100px;
@@ -66,7 +67,33 @@
 .homeNav {
   align-items: center;
 }
-.leftCol {
-  display: flex;
-  margin-left: -17%;
+
+@media only screen and (min-width: 1800px) {
+  .leftCol {
+    display: flex;
+    margin-left: -17%;
+  }
+}
+@media only screen and (width: 1366px) {
+  .leftCol {
+    display: flex;
+    margin-left: -4%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .reality {
+    font-size: 100px;
+  }
+  .we_shape {
+    font-size: 18px !important;
+  }
+  .ideas {
+    font-size: 70px;
+  }
+  .into {
+    font-size: 35px;
+  }
+  .we_shape {
+    font-size: 20px;
+  }
 }

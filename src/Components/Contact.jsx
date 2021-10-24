@@ -1,25 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import Hamburger from "./Hamburger";
 import "../Styles/contact.css";
 import { Link } from "react-router-dom";
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [num, setNum] = useState("");
+  const [desc, setDesc] = useState("");
   return (
     <div className="contact-main p-4">
       <div className="whiteBlock container p-5 pt-5">
         <p className="hd1 mt-5">LEAVE US</p>
         <p className="hd2 font-face-gb">A MESSAGE</p>
-        <input type="text" className="in mt-5" placeholder="YOUR NAME" />
-        <input type="text" className="in mt-5" placeholder="YOUR MAIL" />
         <input
           type="text"
-          className="in mt-5"
+          className="in mt-5 text-dark"
+          placeholder="YOUR NAME"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          className="in mt-5 text-dark"
+          placeholder="YOUR MAIL"
+          value={mail}
+          onChange={(e) => setMail(e.target.value)}
+          required
+        />
+        <input
+          type="number"
+          className="in mt-5 text-dark"
           placeholder="YOUR CONTACT NUMBER "
+          value={num}
+          onChange={(e) => setNum(e.target.value)}
+          required
         />
         <input
           type="text"
-          className="in1 mt-5"
+          className="in1 mt-5 text-dark"
           placeholder="TELL US YOUR STORY "
+          value={desc}
+          onChange={(e) => setDesc(e.target.value)}
+          required
         />
         <button type="button" className="btn btn-dark btn-lg but font-face-gl">
           SEND MESSAGE
@@ -55,7 +79,7 @@ const Contact = () => {
         </div>
         <div className="row contactbody">
           <div className="col-md-1">
-            <Link className="backIconContact" to="/ourwork">
+            <Link className="backIcon" to="/ourwork">
               <i class="fas fa-angle-left fa-2x"></i>
             </Link>
           </div>
