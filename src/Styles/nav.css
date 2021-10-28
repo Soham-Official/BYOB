@@ -1,10 +1,3 @@
-* {
-  outline: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
 .navBar-container {
   width: 100%;
   height: 100%;
@@ -20,11 +13,11 @@
   width: 100%;
 }
 
-#main-home:hover {
-  cursor: url("nav-close.png"), pointer;
+#main-navBar-home:hover {
+  cursor: url("../Images/nav-close.png"), pointer;
 }
 
-#home-back {
+#home-navBar-back {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -34,25 +27,26 @@
   z-index: 99;
 }
 
-#home-back-container {
+#home-navBar-back-container {
   height: 100%;
   width: 1955px;
-  background-image: url("background.gif");
+  background-image: url("../Images/background.gif");
   background-position: 0px 0px;
   position: absolute;
   top: 0px;
   left: 0px;
   padding-left: 100%;
   padding-right: 100%;
+  display: flex;
 }
 
-.home-back-item {
+.home-navBar-back-item {
   float: left;
   height: 140px;
   width: 135px;
 }
 
-.home-back-item-background {
+.home-navBar-back-item-background {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -60,8 +54,8 @@
   width: 240px;
   z-index: 50;
 }
-.home-back-item-transition {
-  background-image: url("sprite.png");
+.home-navBar-back-item-transition {
+  background-image: url("../Images/sprite.png");
   background-repeat: no-repeat;
   position: absolute;
   top: -1px;
@@ -70,7 +64,7 @@
   width: 241px;
   z-index: 51;
 }
-.home-back-item-bg {
+.home-navBar-back-item-bg {
   background-repeat: no-repeat;
   position: absolute;
   top: -140px;
@@ -79,9 +73,9 @@
   width: 240px;
   z-index: 50;
 }
-.home-back-item-nb {
+.home-navBar-back-item-nb {
   position: absolute;
-  top: -30px;
+  top: -34px;
   left: -140px;
   height: 240px;
   width: 240px;
@@ -90,11 +84,11 @@
   font-family: "GeosansLightRegular";
   color: #2e2e2e;
 }
-.home-back-item.selected .home-back-item-nb {
+.home-navBar-back-item.selected .home-navBar-back-item-nb {
   color: #fff;
 }
 
-#home-front {
+#home-navBar-front {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -104,35 +98,35 @@
   z-index: 100;
 }
 
-#home-front-container {
+#home-navBar-front-container {
   height: 100%;
   position: absolute;
   top: 50%;
   left: 100%;
-  margin-top: 50px;
+  margin-top: 43px;
   width: 6580px;
 }
-.home-front-item {
+.home-navBar-front-item {
   height: 85px;
   width: 470px;
   float: left;
 }
-.home-front-item > div {
+.home-navBar-front-item > div {
   width: 470px;
   text-align: center;
 }
-.home-front-item.selected div.title a {
+.home-navBar-front-item.selected div.title a {
   color: #fff;
 }
-.home-front-item div.title a {
+.home-navBar-front-item div.title a {
   font-size: 34px;
   color: #383838;
   font-family: "GeosansLightRegular";
   letter-spacing: 9px;
   text-decoration: none;
 }
-.home-front-item div.description {
-  margin-top: 30px;
+.home-navBar-front-item div.description {
+  margin-top: 22px;
   font-size: 12px;
   font-family: Georgia;
   font-style: italic;
@@ -140,13 +134,13 @@
   letter-spacing: 2px;
 }
 
-.home-back-item > div {
+.home-navBar-back-item > div {
   width: 135px;
   text-align: center;
   position: relative;
 }
 
-#nav {
+#nav-navBar {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -154,25 +148,25 @@
   z-index: 999;
   display: none;
 }
-#logo {
+#logo-navBar {
   position: absolute;
   bottom: 16px;
   left: 50%;
   z-index: 300;
   margin-left: -250px;
 }
-#navigator-container {
+#navigator-navBar-container {
   width: 100%;
   position: relative;
   height: 57px;
   background-color: #000;
 }
-#navigator {
+#navigator-navBar {
   margin: 0 auto;
   position: relative;
   height: 100%;
 }
-.separation {
+.separation-navBar {
   width: 2px;
   height: 11px;
   float: left;
@@ -180,32 +174,32 @@
   opacity: 0.5;
   margin-top: 20px;
 }
-.navigator-item.selected {
-  background-image: url("nav-r-selected.gif");
+.navigator-navBar-item.selected {
+  background-image: url("../Images/nav-r-selected.gif");
   background-position: 0px 12px;
   background-repeat: no-repeat;
 }
-#first-navigator-item {
+#first-navigator-navBar-item {
   margin-top: 0px;
   width: 1px;
   height: 55px;
   float: left;
   padding-bottom: 35px;
   padding-top: 20px;
-  background-image: url("nav-r.gif");
+  background-image: url("../Images/nav-r.gif");
 }
-.navigator-item {
+.navigator-navBar-item {
   margin-top: -12px;
   width: 30px;
-  height: 55px;
+  height: 110px;
   float: left;
   padding-bottom: 35px;
   padding-top: 20px;
-  background-image: url("nav-r.gif");
+  background-image: url("../Images/nav-r.gif");
   background-position: 29px 12px;
   background-repeat: no-repeat;
 }
-#navigator-drag {
+#navigator-navBar-drag {
   width: 31px;
   height: 55px;
   background-color: #fff;
@@ -214,7 +208,7 @@
   left: 0px;
   margin-left: -1px;
 }
-#nav-container {
+#nav-navBar-container {
   position: absolute;
   bottom: -5px;
   left: 0px;
@@ -223,11 +217,11 @@
   padding-top: 10px;
 }
 
-#navigator-drag:hover,
-.navigator-item.hover:hover {
-  cursor: url("clic.png"), pointer;
+#navigator-navBar-drag:hover,
+.navigator-navBar-item.hover:hover {
+  cursor: url("../Images/clic.png"), pointer;
 }
 
-.hover:hover {
+.hover-navBar:hover {
   cursor: pointer;
 }

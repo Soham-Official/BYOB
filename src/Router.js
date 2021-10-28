@@ -5,6 +5,7 @@ import Loader from "./Components/Loader";
 import Ourwork from "./Components/Ourwork";
 import WhatDoWeDo from "./Components/WhatDoWeDo";
 import Contact from "./Components/Contact";
+import Nav from "./Components/Nav";
 
 const Router = () => {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ const Router = () => {
             <Route exact path="/about" component={WhatDoWeDo} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/ourwork" component={Ourwork} />
+            <Route exact patth="/nav" component={Nav} />
           </Switch>
         </BrowserRouter>
       )}
