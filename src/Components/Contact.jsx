@@ -71,9 +71,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="logoblack2">
-              <div>
+              <Link to="/nav">
                 <Hamburger />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

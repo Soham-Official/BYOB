@@ -37,9 +37,9 @@ const Ourwork = () => {
               </div>
             </div>
             <div className="text-white">
-              <div>
+              <Link to="/nav">
                 <Hamburger />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

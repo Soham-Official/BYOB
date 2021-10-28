@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/nav.css";
+import { Link } from "react-router-dom";
 import nav1 from "../Images/nav1.png";
 import nav2 from "../Images/nav2.png";
 import nav3 from "../Images/nav3.png";
@@ -10,7 +11,7 @@ import navLogo from "../Images/navLogo.png";
 const Nav = () => {
   return (
     <div className="navBar-container">
-      <div id="main-navBar-home">
+      <Link id="main-navBar-home" to="/">
         {/* <!-- The background mosaic with the visuals moving in diagonal -->
             <!--
             For home-back change:
@@ -233,7 +234,7 @@ const Nav = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
