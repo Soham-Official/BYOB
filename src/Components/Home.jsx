@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="logoblack2">
-                <Link to="/nav">
+                <Link to={{ pathname: "/nav", state: { from: "/home" } }}>
                   <Hamburger />
                 </Link>
               </div>

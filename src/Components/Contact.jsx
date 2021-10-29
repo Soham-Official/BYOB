@@ -71,7 +71,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="logoblack2">
-              <Link to="/nav">
+              <Link
+                to={{
+                  pathname: "/nav",
+                  state: { from: "/contact" },
+                }}
+              >
                 <Hamburger />
               </Link>
             </div>

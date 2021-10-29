@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/nav.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import nav1 from "../Images/nav1.png";
 import nav2 from "../Images/nav2.png";
 import nav3 from "../Images/nav3.png";
@@ -9,9 +9,12 @@ import sprite from "../Images/sprite.png";
 import navLogo from "../Images/navLogo.png";
 
 const Nav = () => {
+  const location = useLocation();
+  const { from } = location.state;
+  const [onPage, setPageChange] = useState(from);
   return (
     <div className="navBar-container">
-      <Link id="main-navBar-home" to="/">
+      <Link id="main-navBar-home" to={onPage}>
         {/* <!-- The background mosaic with the visuals moving in diagonal -->
             <!--
             For home-back change:

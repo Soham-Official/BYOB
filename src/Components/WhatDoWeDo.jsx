@@ -21,7 +21,7 @@ const WhatDoWeDo = () => {
                 </div>
               </div>
               <div className="text-white">
-                <Link to="/nav">
+                <Link to={{ pathname: "/nav", state: { from: "/about" } }}>
                   <Hamburger />
                 </Link>
               </div>
