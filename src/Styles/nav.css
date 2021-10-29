@@ -38,6 +38,7 @@
   padding-left: 100%;
   padding-right: 100%;
   display: flex;
+  transition: 1s;
 }
 
 .home-navBar-back-item {
@@ -81,7 +82,6 @@
   width: 240px;
   z-index: 51;
   font-size: 22px;
-  font-family: "GeosansLightRegular";
   color: #2e2e2e;
 }
 .home-navBar-back-item.selected .home-navBar-back-item-nb {
@@ -105,6 +105,7 @@
   left: 100%;
   margin-top: 43px;
   width: 6580px;
+  transition: 1s;
 }
 .home-navBar-front-item {
   height: 85px;
@@ -121,14 +122,12 @@
 .home-navBar-front-item div.title a {
   font-size: 34px;
   color: #383838;
-  font-family: "GeosansLightRegular";
   letter-spacing: 9px;
   text-decoration: none;
 }
 .home-navBar-front-item div.description {
   margin-top: 22px;
   font-size: 12px;
-  font-family: Georgia;
   font-style: italic;
   color: #686868;
   letter-spacing: 2px;
@@ -150,8 +149,10 @@
 }
 #logo-navBar {
   position: absolute;
-  bottom: 16px;
-  left: 50%;
+  height: 50px;
+  left: 52%;
+  bottom: 10px;
+  opacity: 1;
   z-index: 300;
   margin-left: -250px;
 }
@@ -200,13 +201,13 @@
   background-repeat: no-repeat;
 }
 #navigator-navBar-drag {
-  width: 31px;
+  width: 28px;
   height: 55px;
   background-color: #fff;
   position: absolute;
   bottom: 0px;
-  left: 0px;
   margin-left: -1px;
+  transition: 0.3s;
 }
 #nav-navBar-container {
   position: absolute;

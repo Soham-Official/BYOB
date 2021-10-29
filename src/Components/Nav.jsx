@@ -12,28 +12,29 @@ const Nav = () => {
   const location = useLocation();
   const { from } = location.state;
   const [onPage, setPageChange] = useState(from);
+
   return (
     <div className="navBar-container">
       <Link id="main-navBar-home" to={onPage}>
         {/* <!-- The background mosaic with the visuals moving in diagonal -->
             <!--
             For home-back change:
-                home-back-container style to change px
-                home-back-item to home-back-item selected
-                home-back-item-transition to change px for background-position: -241px -1446px
+                home-navBar-back-container style to change px
+                home-navBar-back-item to home-navBar-back-item selected
+                home-navBar-back-item-transition to change px for background-position: -241px -1446px
         --> */}
         <div id="home-navBar-back">
           <div
             id="home-navBar-back-container"
             style={{
-              top: "-4020.5px",
-              left: "-1195.5px",
+              top: "-4200px",
+              left: "-1100px",
               paddingTop: "2968px",
               paddingBottom: "2827px",
               backgroundPosition: "1391px 985px",
             }}
           >
-            <div className="home-navBar-back-item selected">
+            <div id="back-sel1" className="home-navBar-back-item selected">
               <div>
                 <div
                   className="home-navBar-back-item-nb"
@@ -53,6 +54,7 @@ const Nav = () => {
                     }}
                   ></div>
                   <div
+                    id="img-sel1"
                     className="home-navBar-back-item-transition"
                     style={{
                       width: "241px",
@@ -65,7 +67,7 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="home-navBar-back-item">
+            <div id="back-sel2" className="home-navBar-back-item">
               <div>
                 <div
                   className="home-navBar-back-item-nb"
@@ -85,6 +87,7 @@ const Nav = () => {
                     }}
                   ></div>
                   <div
+                    id="img-sel2"
                     className="home-navBar-back-item-transition"
                     style={{
                       width: "241px",
@@ -97,7 +100,7 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="home-navBar-back-item">
+            <div id="back-sel3" className="home-navBar-back-item">
               <div>
                 <div
                   className="home-navBar-back-item-nb"
@@ -117,6 +120,7 @@ const Nav = () => {
                     }}
                   ></div>
                   <div
+                    id="img-sel3"
                     className="home-navBar-back-item-transition"
                     style={{
                       width: "241px",
@@ -129,7 +133,7 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="home-navBar-back-item">
+            <div id="back-sel4" className="home-navBar-back-item">
               <div>
                 <div
                   className="home-navBar-back-item-nb"
@@ -143,15 +147,20 @@ const Nav = () => {
                 >
                   <div
                     className="home-navBar-back-item-background"
-                    style={{ backgroundimage: `url(${nav4})` }}
+                    style={{
+                      backgroundImage: `url(${nav4})`,
+                      opacity: 1,
+                    }}
                   ></div>
                   <div
+                    id="img-sel4"
                     className="home-navBar-back-item-transition"
                     style={{
                       width: "241px",
                       height: "241px",
                       backgroundImage: `url(${sprite})`,
                       backgroundRepeat: "no-repeat",
+                      backgroundPosition: "0px 0px",
                     }}
                   ></div>
                 </div>
@@ -163,62 +172,53 @@ const Nav = () => {
         {/* <!-- The front menu with the names of the items -->
             <!--
             For home-front change:
-                home-front-container to change px
-                home-front-item to home-front-item
+                home-navBar-front-container to change px
+                home-navBar-front-item to home-navBar-front-item selected
         --> */}
         <div id="home-navBar-front">
           <div id="home-navBar-front-container" style={{ left: "700px" }}>
-            <div className="home-navBar-front-item selected">
+            <div id="nav-sel1" className="home-navBar-front-item selected">
               <div className="title">
-                <a href="#!/whoweare/" className="">
-                  WHO WE ARE
+                <a href="/#" className="font-face-gb">
+                  HOME
                 </a>
               </div>
-              <div className="description">Telling fascinating stories</div>
+              <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
-            <div className="home-navBar-front-item">
+            <div id="nav-sel2" className="home-navBar-front-item">
               <div className="title">
-                <a href="#!/ralphlauren/" className="">
-                  RALPH LAUREN
+                <a href="/#" className="font-face-gb">
+                  WHAT DO WE DO?
                 </a>
               </div>
-              <div className="description">Forget me not</div>
+              <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
-            <div className="home-navBar-front-item">
+            <div id="nav-sel3" className="home-navBar-front-item">
               <div className="title">
-                <a href="#!/bose/" className="">
-                  BOSE
+                <a href="/#" className="font-face-gb">
+                  OUR WORKS
                 </a>
               </div>
-              <div className="description">
-                Treating the sound as a part of the picture
-              </div>
+              <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
-            <div className="home-navBar-front-item">
+            <div id="nav-sel4" className="home-navBar-front-item">
               <div className="title">
-                <a href="#!/bullittagency/" className="">
-                  INTERACTIVE DESIGNS
+                <a href="/#" className="font-face-gb">
+                  CONTACT US
                 </a>
               </div>
-              <div className="description">
-                We try to make the web a better world
-              </div>
+              <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
           </div>
         </div>
 
         {/* <!--
             For nav change:
-                navigator-item hover to navigator-item hover selected
-                navigator-drag to change px
+                navigator-navBar-item hover to navigator-navBar-item hover selected
+                navigator-navBar-drag to change px
         --> */}
         <div id="nav-navBar" style={{ display: "block" }}>
-          <img
-            src={navLogo}
-            id="logo-navBar"
-            style={{ bottom: "17px", opacity: 1 }}
-            alt="logo"
-          />
+          <img src={navLogo} id="logo-navBar" alt="logo" />
 
           <div
             id="nav-navBar-container"
@@ -228,11 +228,39 @@ const Nav = () => {
             <div id="navigator-navBar-container">
               <div id="navigator-navBar" style={{ width: "121px" }}>
                 <div id="first-navigator-navBar-item"></div>
-                <div className="navigator-navBar-item hover selected"></div>
-                <div className="navigator-navBar-item hover"></div>
-                <div className="navigator-navBar-item hover"></div>
-                <div className="navigator-navBar-item hover"></div>
-                <div id="navigator-navBar-drag" style={{ left: "1px" }}></div>
+                <div
+                  id="hover1"
+                  className="navigator-navBar-item hover selected"
+                  onMouseOver={() => {
+                    setPageChange("/");
+                    hoverChange("hover1");
+                  }}
+                ></div>
+                <div
+                  id="hover2"
+                  className="navigator-navBar-item hover"
+                  onMouseOver={() => {
+                    setPageChange("/about");
+                    hoverChange("hover2");
+                  }}
+                ></div>
+                <div
+                  id="hover3"
+                  className="navigator-navBar-item hover"
+                  onMouseOver={() => {
+                    setPageChange("/ourwork");
+                    hoverChange("hover3");
+                  }}
+                ></div>
+                <div
+                  id="hover4"
+                  className="navigator-navBar-item hover"
+                  onMouseOver={() => {
+                    setPageChange("/contact");
+                    hoverChange("hover4");
+                  }}
+                ></div>
+                <div id="navigator-navBar-drag" style={{ left: "2px" }}></div>
               </div>
             </div>
           </div>
@@ -240,6 +268,121 @@ const Nav = () => {
       </Link>
     </div>
   );
+};
+
+const hoverChange = (el) => {
+  //Navbar
+  document.getElementById("hover1").className = "navigator-navBar-item hover";
+  document.getElementById("hover2").className = "navigator-navBar-item hover";
+  document.getElementById("hover3").className = "navigator-navBar-item hover";
+  document.getElementById("hover4").className = "navigator-navBar-item hover";
+  //Home Front
+  document.getElementById("nav-sel1").className = "home-navBar-front-item";
+  document.getElementById("nav-sel2").className = "home-navBar-front-item";
+  document.getElementById("nav-sel3").className = "home-navBar-front-item";
+  document.getElementById("nav-sel4").className = "home-navBar-front-item";
+  //Home Back
+  document.getElementById("back-sel1").className = "home-navBar-back-item";
+  document.getElementById("back-sel2").className = "home-navBar-back-item";
+  document.getElementById("back-sel3").className = "home-navBar-back-item";
+  document.getElementById("back-sel4").className = "home-navBar-back-item";
+  //Home Back Image
+  document.getElementById("img-sel1").style.backgroundPosition = "0px 0px";
+  document.getElementById("img-sel2").style.backgroundPosition = "0px 0px";
+  document.getElementById("img-sel3").style.backgroundPosition = "0px 0px";
+  document.getElementById("img-sel4").style.backgroundPosition = "0px 0px";
+  switch (el) {
+    case "hover1":
+      //Navbar
+      document.getElementById("hover1").className =
+        "navigator-navBar-item hover selected";
+      document.getElementById("navigator-navBar-drag").style.left = "2px";
+      //Home Front
+      document.getElementById("nav-sel1").className =
+        "home-navBar-front-item selected";
+      document.getElementById("home-navBar-front-container").style.left =
+        "700px";
+      //Home Back
+      document.getElementById("back-sel1").className =
+        "home-navBar-back-item selected";
+      //Home Back Image
+      document.getElementById("img-sel1").style.backgroundPosition =
+        "-241px -1446px";
+      //Home Back Position
+      document.getElementById("home-navBar-back-container").style.top =
+        "-4200px";
+      document.getElementById("home-navBar-back-container").style.left =
+        "-1100px";
+      break;
+    case "hover2":
+      //Navbar
+      document.getElementById("hover2").className =
+        "navigator-navBar-item hover selected";
+      document.getElementById("navigator-navBar-drag").style.left = "32px";
+      //Home Front
+      document.getElementById("nav-sel2").className =
+        "home-navBar-front-item selected";
+      document.getElementById("home-navBar-front-container").style.left =
+        "300px";
+      //Home Back
+      document.getElementById("back-sel2").className =
+        "home-navBar-back-item selected";
+      //Home Back Image
+      document.getElementById("img-sel2").style.backgroundPosition =
+        "-241px -1446px";
+      //Home Back Position
+      document.getElementById("home-navBar-back-container").style.top =
+        "-4080px";
+      document.getElementById("home-navBar-back-container").style.left =
+        "-1220px";
+      break;
+    case "hover3":
+      //Navbar
+      document.getElementById("hover3").className =
+        "navigator-navBar-item hover selected";
+      document.getElementById("navigator-navBar-drag").style.left = "62px";
+      //Home Front
+      document.getElementById("nav-sel3").className =
+        "home-navBar-front-item selected";
+      document.getElementById("home-navBar-front-container").style.left =
+        "-200px";
+      //Home Back
+      document.getElementById("back-sel3").className =
+        "home-navBar-back-item selected";
+      //Home Back Image
+      document.getElementById("img-sel3").style.backgroundPosition =
+        "-241px -1446px";
+      //Home Back Position
+      document.getElementById("home-navBar-back-container").style.top =
+        "-3960px";
+      document.getElementById("home-navBar-back-container").style.left =
+        "-1340px";
+      break;
+    case "hover4":
+      //Navbar
+      document.getElementById("hover4").className =
+        "navigator-navBar-item hover selected";
+      document.getElementById("navigator-navBar-drag").style.left = "92px";
+      //Home Front
+      document.getElementById("nav-sel4").className =
+        "home-navBar-front-item selected";
+      document.getElementById("home-navBar-front-container").style.left =
+        "-700px";
+      //Home Back
+      document.getElementById("back-sel4").className =
+        "home-navBar-back-item selected";
+      //Home Back Image
+      document.getElementById("img-sel4").style.backgroundPosition =
+        "-241px -1446px";
+      //Home Back Position
+      document.getElementById("home-navBar-back-container").style.top =
+        "-3840px";
+      document.getElementById("home-navBar-back-container").style.left =
+        "-1460px";
+      break;
+    default:
+      console.log("default");
+  }
 };
 
 export default Nav;
