@@ -37,7 +37,7 @@ const Contact = () => {
         <Error />
       ) : (
         <div className="contact-main p-4">
-          <div className="whiteBlock container p-5 pt-5">
+          <div id="white-box" className="whiteBlock container">
             <p className="hd1 mt-5">LEAVE US</p>
             <p className="hd2 font-face-gb">A MESSAGE</p>
             <input

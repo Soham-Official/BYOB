@@ -189,33 +189,33 @@ const Nav = () => {
           <div id="home-navBar-front-container" style={{ left: "700px" }}>
             <div id="nav-sel1" className="home-navBar-front-item selected">
               <div className="title">
-                <a href="/#" className="font-face-gb">
+                <div href="/#" className="font-face-gb">
                   HOME
-                </a>
+                </div>
               </div>
               <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
             <div id="nav-sel2" className="home-navBar-front-item">
               <div className="title">
-                <a href="/#" className="font-face-gb">
+                <div href="/#" className="font-face-gb">
                   WHAT DO WE DO?
-                </a>
+                </div>
               </div>
               <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
             <div id="nav-sel3" className="home-navBar-front-item">
               <div className="title">
-                <a href="/#" className="font-face-gb">
+                <div href="/#" className="font-face-gb">
                   OUR WORKS
-                </a>
+                </div>
               </div>
               <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>
             <div id="nav-sel4" className="home-navBar-front-item">
               <div className="title">
-                <a href="/#" className="font-face-gb">
+                <div href="/#" className="font-face-gb">
                   CONTACT US
-                </a>
+                </div>
               </div>
               <div className="description">Lorem ipsum dolor sit amet.</div>
             </div>

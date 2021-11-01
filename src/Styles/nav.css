@@ -116,10 +116,10 @@
   width: 470px;
   text-align: center;
 }
-.home-navBar-front-item.selected div.title a {
+.home-navBar-front-item.selected div.title div {
   color: #fff;
 }
-.home-navBar-front-item div.title a {
+.home-navBar-front-item div.title div {
   font-size: 34px;
   color: #383838;
   letter-spacing: 9px;

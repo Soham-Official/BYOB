@@ -132,3 +132,13 @@
     padding-top: 50px;
   }
 }
+
+#white-box {
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  #white-box {
+    padding: 1.5rem;
+  }
+}

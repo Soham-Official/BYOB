@@ -72,7 +72,7 @@ const Home = () => {
               </div>
               <div className="col-md-6 homeRightCol">
                 <Link className="icon" to="/about">
-                  <i class="fas fa-angle-right fa-2x"></i>
+                  <i className="fas fa-angle-right fa-2x"></i>
                 </Link>
               </div>
             </div>
