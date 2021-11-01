@@ -6,7 +6,7 @@ import nav2 from "../Images/nav2.png";
 import nav3 from "../Images/nav3.png";
 import nav4 from "../Images/nav4.png";
 import sprite from "../Images/sprite.png";
-import navLogo from "../Images/navLogo.png";
+import Logo from "./Logo";
 
 const Nav = () => {
   const location = useLocation();
@@ -15,6 +15,16 @@ const Nav = () => {
 
   return (
     <div className="navBar-container">
+      <div id="logo-navBar">
+        <Logo />
+      </div>
+      <div className="nav-socials">
+        <i className="fa fa-facebook-square"></i>
+        <i className="fa fa-instagram"></i>
+        <i className="fa fa-linkedin-square"></i>
+        <i className="fa fa-twitter"></i>
+        <i className="fa fa-pinterest"></i>
+      </div>
       <Link id="main-navBar-home" to={onPage}>
         {/* <!-- The background mosaic with the visuals moving in diagonal -->
             <!--
@@ -218,8 +228,6 @@ const Nav = () => {
                 navigator-navBar-drag to change px
         --> */}
         <div id="nav-navBar" style={{ display: "block" }}>
-          <img src={navLogo} id="logo-navBar" alt="logo" />
-
           <div
             id="nav-navBar-container"
             className=""

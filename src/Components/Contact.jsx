@@ -18,7 +18,7 @@ const Contact = () => {
     }, []);
     return size;
   }
-  const [width, height] = useWindowSize();
+  const [width] = useWindowSize();
   useEffect(() => {
     console.log(width);
     if (width < 1024) {
@@ -26,7 +26,7 @@ const Contact = () => {
     } else {
       setError(false);
     }
-  });
+  }, [width]);
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [num, setNum] = useState("");
@@ -135,7 +135,6 @@ const Contact = () => {
                     </span>
                   </p>
                   <p className="dials mt-5 ">
-                    {" "}
                     <i className="fa fa-phone"></i>
                     <span className="font-face-gl dial">+91 89108 40894</span>
                   </p>

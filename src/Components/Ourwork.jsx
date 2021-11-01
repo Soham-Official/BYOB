@@ -20,7 +20,7 @@ const Ourwork = () => {
     }, []);
     return size;
   }
-  const [width, height] = useWindowSize();
+  const [width] = useWindowSize();
   useEffect(() => {
     console.log(width);
     if (width < 1024) {
@@ -28,7 +28,7 @@ const Ourwork = () => {
     } else {
       setError(false);
     }
-  });
+  }, [width]);
   const [modalHide, setModalHide] = useState("modal-blur hide");
   const [modalContentHide, setModalContentHide] =
     useState("modal-content hide");

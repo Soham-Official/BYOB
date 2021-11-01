@@ -20,7 +20,7 @@ const WhatDoWeDo = () => {
     }, []);
     return size;
   }
-  const [width, height] = useWindowSize();
+  const [width] = useWindowSize();
   useEffect(() => {
     console.log(width);
     if (width < 1024) {
@@ -28,7 +28,7 @@ const WhatDoWeDo = () => {
     } else {
       setError(false);
     }
-  });
+  }, [width]);
   return (
     <>
       {error ? (
