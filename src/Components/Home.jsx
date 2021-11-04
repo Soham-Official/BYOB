@@ -109,7 +109,7 @@ const Home = () => {
                     fill="#FFFDFD"
                   />
                 </Link>
-              </svg>{" "}
+              </svg>
             </div>
           </div>
         </div>
