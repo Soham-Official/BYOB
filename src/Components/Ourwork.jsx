@@ -3,7 +3,6 @@ import Hamburger from "./Hamburger";
 import Logo from "./Logo";
 import "../Styles/ourwork.css";
 import { Link } from "react-router-dom";
-import img1 from "../Images/banana.jpg";
 import bangkok from "../Images/bangkok.jpg";
 import dubai from "../Images/dubai.jpg";
 import diamond1 from "../Images/diamond1.jpg";
@@ -63,7 +62,6 @@ const Ourwork = () => {
           <div className="row aboutrow">
             <div
               className="col-md-6 img1"
-              style={{ backgroundImage: `url(${bangkok})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -72,7 +70,6 @@ const Ourwork = () => {
             ></div>
             <div
               className="col-md-6 img2"
-              style={{ backgroundImage: `url(${dubai})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -97,7 +94,6 @@ const Ourwork = () => {
           <div className="row aboutrow">
             <div
               className="col-md-6 img3"
-              style={{ backgroundImage: `url(${diamond})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -117,7 +113,6 @@ const Ourwork = () => {
                   ></div>
                   <div
                     className="row img5"
-                    style={{ backgroundImage: `url(${diamond1})` }}
                     onClick={() => {
                       setModalHide("modal-blur");
                       setModalContentHide("modal-content");
@@ -127,7 +122,6 @@ const Ourwork = () => {
                 </div>
                 <div
                   className="col-md-6 img6"
-                  style={{ backgroundImage: `url(${tubecoffee})` }}
                   onClick={() => {
                     setModalHide("modal-blur");
                     setModalContentHide("modal-content");

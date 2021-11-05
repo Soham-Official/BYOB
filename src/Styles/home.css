@@ -6,6 +6,7 @@
   padding-left: 2%;
   padding-right: 2%;
   background-color: #212121;
+  background-image: url("../Images/HomepageBulb.png");
 }
 .homeText {
   align-items: center;

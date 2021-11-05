@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger";
 import "../Styles/contact.css";
 import { Link } from "react-router-dom";
 import Error from "./Error";
-const Contact = (props) => {
+const Contact = () => {
   const [error, setError] = useState(false);
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -36,10 +36,7 @@ const Contact = (props) => {
       {error ? (
         <Error />
       ) : (
-        <div
-          className="contact-main p-4"
-          style={{ backgroundImage: `url(${props.contactImg})` }}
-        >
+        <div className="contact-main p-4">
           <div id="white-box" className="whiteBlock container">
             <p className="hd1 mt-5">LEAVE US</p>
             <p className="hd2 font-face-gb">A MESSAGE</p>
@@ -118,7 +115,7 @@ const Contact = (props) => {
             <div className="row contactbody">
               <div className="col-md-1">
                 <Link className="backIcon" to="/ourwork">
-                  <i class="fas fa-angle-left fa-2x"></i>
+                  <i className="fas fa-angle-left fa-2x"></i>
                 </Link>
               </div>
               <div className="col-md-8 ">

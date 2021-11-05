@@ -137,3 +137,30 @@
     fill: white;
   }
 }
+
+.homeImg {
+  background: url("../Images/HomepageBulb.png") no-repeat -9999px -9999px;
+}
+
+.contactImg {
+  background: url("../Images/2.png") no-repeat -9999px -9999px;
+}
+
+.loadImg1 {
+  background: url("../Images/bangkok.jpg") no-repeat -9999px -9999px;
+}
+.loadImg2 {
+  background: url("../Images/dubai.jpg") no-repeat -9999px -9999px;
+}
+.loadImg3 {
+  background: url("../Images/diamond.jpg") no-repeat -9999px -9999px;
+}
+.loadImg4 {
+  background: url("../Images/dice.jfif") no-repeat -9999px -9999px;
+}
+.loadImg5 {
+  background: url("../Images/diamond1.jpg") no-repeat -9999px -9999px;
+}
+.loadImg6 {
+  background: url("../Images/tubecoffee.jpg") no-repeat -9999px -9999px;
+}

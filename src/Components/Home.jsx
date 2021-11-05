@@ -5,7 +5,7 @@ import "../Styles/dots.css";
 import Logo from "./Logo";
 import Hamburger from "./Hamburger";
 import Error from "./Error";
-const Home = (props) => {
+const Home = () => {
   const [error, setError] = useState(false);
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -33,10 +33,7 @@ const Home = (props) => {
       {error ? (
         <Error />
       ) : (
-        <div
-          className="homepage p-4"
-          style={{ backgroundImage: `url(${props.homeImg})` }}
-        >
+        <div className="homepage p-4">
           <div className="row">
             <div className="container">
               <div className="d-flex justify-content-between homeNav">

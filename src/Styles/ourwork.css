@@ -4,7 +4,7 @@
 .img1 {
   height: 50vh;
   width: 50vw;
-  /* background-image: url("../Images/bangkok.jpg"); */
+  background-image: url("../Images/bangkok.jpg");
   background-size: 100%;
   transition: all 0.5s ease;
   background-size: 100%;
@@ -16,7 +16,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  /* background-image: url("../Images/dubai.jpg"); */
+  background-image: url("../Images/dubai.jpg");
   background-position-y: bottom;
 }
 .img3 {
@@ -25,7 +25,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  /* background-image: url("../Images/diamond.jpg"); */
+  background-image: url("../Images/diamond.jpg");
   background-position: center;
 }
 .img4 {
@@ -42,7 +42,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  /* background-image: url("../Images/plague.jfif"); */
+  background-image: url("../Images/diamond1.jpg");
 }
 .img6 {
   height: 50vh;
@@ -50,7 +50,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  /* background-image: url("../Images/tubecoffee.jpg"); */
+  background-image: url("../Images/tubecoffee.jpg");
 }
 .ourwork {
   height: 100vh;
