@@ -38,6 +38,19 @@ const Ourwork = () => {
   const [modalHide, setModalHide] = useState("modal-blur hide");
   const [modalContentHide, setModalContentHide] =
     useState("modal-content hide");
+  const [modalimg, setModalimg] = useState("");
+  const ModalContent = () => {
+    if (modalimg === "img1")
+      return <img src={bangkok} alt="quickview" className="quickview" />;
+    if (modalimg === "img2")
+      return <img src={dubai} alt="quickview" className="quickview" />;
+    if (modalimg === "img3")
+      return <img src={diamond} alt="quickview" className="quickview" />;
+    if (modalimg === "img5")
+      return <img src={diamond1} alt="quickview" className="quickview" />;
+    if (modalimg === "img6")
+      return <img src={tubecoffee} alt="quickview" className="quickview" />;
+  };
   return (
     <>
       {error ? (
@@ -54,6 +67,7 @@ const Ourwork = () => {
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
+                setModalimg("img1");
               }}
             ></div>
             <div
@@ -62,6 +76,7 @@ const Ourwork = () => {
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
+                setModalimg("img2");
               }}
             ></div>
             <div className="container p-4 ourworknav">
@@ -86,6 +101,7 @@ const Ourwork = () => {
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
+                setModalimg("img3");
               }}
             ></div>
             <div className="col-md-6 ">
@@ -96,6 +112,7 @@ const Ourwork = () => {
                     onClick={() => {
                       setModalHide("modal-blur");
                       setModalContentHide("modal-content");
+                      setModalimg("img4");
                     }}
                   ></div>
                   <div
@@ -104,6 +121,7 @@ const Ourwork = () => {
                     onClick={() => {
                       setModalHide("modal-blur");
                       setModalContentHide("modal-content");
+                      setModalimg("img5");
                     }}
                   ></div>
                 </div>
@@ -113,6 +131,7 @@ const Ourwork = () => {
                   onClick={() => {
                     setModalHide("modal-blur");
                     setModalContentHide("modal-content");
+                    setModalimg("img6");
                   }}
                 ></div>
               </div>
@@ -130,9 +149,7 @@ const Ourwork = () => {
           ></div>
           <div className={modalContentHide}>
             <div className="row">
-              <div className="col-md-6">
-                <img src={img1} alt="quickview" className="quickview" />
-              </div>
+              <div className="col-md-6">{ModalContent()}</div>
               <div className="col-md-6">
                 <p
                   className="closeButton"
