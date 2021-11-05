@@ -7,6 +7,9 @@ import WhatDoWeDo from "./Components/WhatDoWeDo";
 import Contact from "./Components/Contact";
 import Nav from "./Components/Nav";
 import Error from "./Components/Error";
+import homeImage from "./Images/HomepageBulb.png";
+import video from "./Videos/about.mp4";
+import contactImage from "./Images/2.png";
 
 const Router = () => {
   const [loading, setLoading] = useState(true);
@@ -40,9 +43,21 @@ const Router = () => {
         <>
           <BrowserRouter>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={WhatDoWeDo} />
-              <Route exact path="/contact" component={Contact} />
+              <Route
+                exact
+                path="/"
+                component={() => <Home homeImg={homeImage} />}
+              />
+              <Route
+                exact
+                path="/about"
+                component={() => <WhatDoWeDo aboutVideo={video} />}
+              />
+              <Route
+                exact
+                path="/contact"
+                component={() => <Contact contactImg={contactImage} />}
+              />
               <Route exact path="/ourwork" component={Ourwork} />
               <Route exact patth="/nav" component={Nav} />
             </Switch>

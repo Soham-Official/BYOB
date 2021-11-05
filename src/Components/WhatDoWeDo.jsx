@@ -3,10 +3,9 @@ import "../Styles/about.css";
 import Hamburger from "./Hamburger";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-import video from "../Videos/about.mp4";
 import Error from "./Error";
 
-const WhatDoWeDo = () => {
+const WhatDoWeDo = (props) => {
   const [error, setError] = useState(false);
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -36,7 +35,7 @@ const WhatDoWeDo = () => {
       ) : (
         <>
           <video autoPlay muted loop id="myVideo">
-            <source src={video} type="video/mp4" />
+            <source src={props.aboutVideo} type="video/mp4" />
           </video>
           <div className="aboutpage p-4">
             <div className="row">

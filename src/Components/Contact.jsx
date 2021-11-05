@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger";
 import "../Styles/contact.css";
 import { Link } from "react-router-dom";
 import Error from "./Error";
-const Contact = () => {
+const Contact = (props) => {
   const [error, setError] = useState(false);
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -36,7 +36,10 @@ const Contact = () => {
       {error ? (
         <Error />
       ) : (
-        <div className="contact-main p-4">
+        <div
+          className="contact-main p-4"
+          style={{ backgroundImage: `url(${props.contactImg})` }}
+        >
           <div id="white-box" className="whiteBlock container">
             <p className="hd1 mt-5">LEAVE US</p>
             <p className="hd2 font-face-gb">A MESSAGE</p>
