@@ -109,11 +109,11 @@ const Ourwork = () => {
                 <div className="col-md-6 ">
                   <div
                     className="row img4"
-                    onClick={() => {
-                      setModalHide("modal-blur");
-                      setModalContentHide("modal-content");
-                      setModalimg("img4");
-                    }}
+                    // onClick={() => {
+                    //   setModalHide("modal-blur");
+                    //   setModalContentHide("modal-content");
+                    //   setModalimg("img4");
+                    // }}
                   ></div>
                   <div
                     className="row img5"
