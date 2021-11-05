@@ -4,6 +4,12 @@ import Logo from "./Logo";
 import "../Styles/ourwork.css";
 import { Link } from "react-router-dom";
 import img1 from "../Images/banana.jpg";
+import bangkok from "../Images/bangkok.jpg";
+import dubai from "../Images/dubai.jpg";
+import diamond1 from "../Images/diamond1.jpg";
+import diamond from "../Images/diamond.jpg";
+import tubecoffee from "../Images/tubecoffee.jpg";
+
 import Error from "./Error";
 
 const Ourwork = () => {
@@ -39,11 +45,12 @@ const Ourwork = () => {
       ) : (
         <div className="ourwork">
           <Link className="backIconWorks" to="/about">
-            <i class="fas fa-angle-left fa-2x"></i>
+            <i className="fas fa-angle-left fa-2x"></i>
           </Link>
           <div className="row aboutrow">
             <div
               className="col-md-6 img1"
+              style={{ backgroundImage: `url(${bangkok})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -51,6 +58,7 @@ const Ourwork = () => {
             ></div>
             <div
               className="col-md-6 img2"
+              style={{ backgroundImage: `url(${dubai})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -74,6 +82,7 @@ const Ourwork = () => {
           <div className="row aboutrow">
             <div
               className="col-md-6 img3"
+              style={{ backgroundImage: `url(${diamond})` }}
               onClick={() => {
                 setModalHide("modal-blur");
                 setModalContentHide("modal-content");
@@ -91,6 +100,7 @@ const Ourwork = () => {
                   ></div>
                   <div
                     className="row img5"
+                    style={{ backgroundImage: `url(${diamond1})` }}
                     onClick={() => {
                       setModalHide("modal-blur");
                       setModalContentHide("modal-content");
@@ -99,6 +109,7 @@ const Ourwork = () => {
                 </div>
                 <div
                   className="col-md-6 img6"
+                  style={{ backgroundImage: `url(${tubecoffee})` }}
                   onClick={() => {
                     setModalHide("modal-blur");
                     setModalContentHide("modal-content");
@@ -108,7 +119,7 @@ const Ourwork = () => {
             </div>
           </div>
           <Link className="forwardIconWorks" to="/contact">
-            <i class="fas fa-angle-right fa-2x"></i>
+            <i className="fas fa-angle-right fa-2x"></i>
           </Link>
           <div
             className={modalHide}

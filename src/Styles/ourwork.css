@@ -4,10 +4,11 @@
 .img1 {
   height: 50vh;
   width: 50vw;
-  background-image: url("../Images/banana.jpg");
+  /* background-image: url("../Images/bangkok.jpg"); */
   background-size: 100%;
   transition: all 0.5s ease;
   background-size: 100%;
+  background-position: center;
 }
 .img2 {
   height: 50vh;
@@ -15,7 +16,8 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  background-image: url("../Images/cyborg.jpg");
+  /* background-image: url("../Images/dubai.jpg"); */
+  background-position-y: bottom;
 }
 .img3 {
   height: 50vh;
@@ -23,7 +25,8 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  background-image: url("../Images/cyborg.jpg");
+  /* background-image: url("../Images/diamond.jpg"); */
+  background-position: center;
 }
 .img4 {
   height: 25vh;
@@ -39,7 +42,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  background-image: url("../Images/plague.jfif");
+  /* background-image: url("../Images/plague.jfif"); */
 }
 .img6 {
   height: 50vh;
@@ -47,7 +50,7 @@
   background-position: center;
   transition: all 0.5s ease;
   background-size: 100%;
-  background-image: url("../Images/banana.jpg");
+  /* background-image: url("../Images/tubecoffee.jpg"); */
 }
 .ourwork {
   height: 100vh;

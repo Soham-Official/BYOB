@@ -13,7 +13,6 @@ const Nav = () => {
   const location = useLocation();
   const { from } = location.state;
   const [onPage, setPageChange] = useState(from);
-
   const [error, setError] = useState(false);
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);

@@ -59,7 +59,7 @@ const WhatDoWeDo = () => {
               <div className="row homebody">
                 <div className="col-md-1">
                   <Link className="backIcon" to="/">
-                    <i class="fas fa-angle-left fa-2x"></i>
+                    <i className="fas fa-angle-left fa-2x"></i>
                   </Link>
                 </div>
                 <div className="col-md-9 aboutBody">
@@ -82,7 +82,7 @@ const WhatDoWeDo = () => {
                 </div>
                 <div className="col-md-2 homeRightCol">
                   <Link className="icon" to="/ourwork">
-                    <i class="fas fa-angle-right fa-2x"></i>
+                    <i className="fas fa-angle-right fa-2x"></i>
                   </Link>
                 </div>
               </div>
