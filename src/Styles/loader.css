@@ -164,3 +164,21 @@
 .loadImg6 {
   background: url("../Images/tubecoffee.jpg") no-repeat -9999px -9999px;
 }
+.fonts1 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  font-family: "GothamBook";
+}
+.fonts2 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  font-family: "GothamLight";
+}
+.fonts3 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  font-family: "GothamMedium";
+}

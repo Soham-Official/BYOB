@@ -12,6 +12,10 @@ const Loader = () => {
       <div className="loadImg4"></div>
       <div className="loadImg5"></div>
       <div className="loadImg6"></div>
+      <div className="fonts1">ab</div>
+      <div className="fonts2">ab</div>
+      <div className="fonts3">ab</div>
+
       <div className="loader">
         <svg
           id="svgLoader"
