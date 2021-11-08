@@ -11,12 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 * {
   padding: 0;
   margin: 0;
-
   color: white;
 }
+
 @font-face {
   font-family: "GothamBook";
   src: local("GothamBook"), url("./font/GothamBook.ttf") format("truetype");
