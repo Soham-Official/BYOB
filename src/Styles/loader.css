@@ -182,3 +182,19 @@
   left: -9999px;
   font-family: "GothamMedium";
 }
+
+.navImg1 {
+  background: url("../Images/nav1.png") no-repeat -9999px -9999px;
+}
+
+.navImg2 {
+  background: url("../Images/nav2.png") no-repeat -9999px -9999px;
+}
+
+.navImg3 {
+  background: url("../Images/nav3.png") no-repeat -9999px -9999px;
+}
+
+.navImg4 {
+  background: url("../Images/nav4.png") no-repeat -9999px -9999px;
+}
