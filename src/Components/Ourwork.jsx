@@ -13,27 +13,27 @@ import Error from "./Error";
 
 const Ourwork = () => {
   const [error, setError] = useState(false);
-  function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-  }
-  const [width] = useWindowSize();
-  useEffect(() => {
-    console.log(width);
-    if (width < 1024) {
-      setError(true);
-    } else {
-      setError(false);
-    }
-  }, [width]);
+  // function useWindowSize() {
+  //   const [size, setSize] = useState([0, 0]);
+  //   useLayoutEffect(() => {
+  //     function updateSize() {
+  //       setSize([window.innerWidth, window.innerHeight]);
+  //     }
+  //     window.addEventListener("resize", updateSize);
+  //     updateSize();
+  //     return () => window.removeEventListener("resize", updateSize);
+  //   }, []);
+  //   return size;
+  // }
+  // const [width] = useWindowSize();
+  // useEffect(() => {
+  //   console.log(width);
+  //   if (width < 1024) {
+  //     setError(true);
+  //   } else {
+  //     setError(false);
+  //   }
+  // }, [width]);
   const [modalHide, setModalHide] = useState("modal-blur hide");
   const [modalContentHide, setModalContentHide] =
     useState("modal-content hide");
@@ -100,16 +100,32 @@ const Ourwork = () => {
                 setModalimg("img3");
               }}
             ></div>
-            <div className="col-md-6 ">
-              <div className="row">
-                <div className="col-md-6 ">
+            <div className="col-md-6 flex" style={{ padding: 0 }}>
+              <div className="d-flex">
+                <div className="d-flex" style={{ flexDirection: "column" }}>
+                  <div className="img4"></div>
                   <div
-                    className="row img4"
-                    // onClick={() => {
-                    //   setModalHide("modal-blur");
-                    //   setModalContentHide("modal-content");
-                    //   setModalimg("img4");
-                    // }}
+                    className="img5"
+                    onClick={() => {
+                      setModalHide("modal-blur");
+                      setModalContentHide("modal-content");
+                      setModalimg("img5");
+                    }}
+                  ></div>
+                </div>
+                <div
+                  className="img6"
+                  onClick={() => {
+                    setModalHide("modal-blur");
+                    setModalContentHide("modal-content");
+                    setModalimg("img6");
+                  }}
+                ></div>
+              </div>
+              {/* <div className="row flex">
+                <div className="col-6 ">
+                  <div
+                    className="row img4 "
                   ></div>
                   <div
                     className="row img5"
@@ -121,14 +137,14 @@ const Ourwork = () => {
                   ></div>
                 </div>
                 <div
-                  className="col-md-6 img6"
+                  className="col-6 img6"
                   onClick={() => {
                     setModalHide("modal-blur");
                     setModalContentHide("modal-content");
                     setModalimg("img6");
                   }}
                 ></div>
-              </div>
+              </div> */}
             </div>
           </div>
           <Link className="forwardIconWorks" to="/contact">

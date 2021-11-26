@@ -52,6 +52,31 @@
   background-size: 100%;
   background-image: url("../Images/tubecoffee.jpg");
 }
+@media only screen and (max-width: 1023px) {
+  .img1,
+  .img2 {
+    width: 50vw;
+  }
+  .img3 {
+    width: 100vw;
+  }
+  .img4 {
+    display: none;
+  }
+  .img5 {
+    width: 50vw;
+    height: 50vh;
+  }
+  .img6 {
+    width: 50vw;
+  }
+  .flex {
+    width: 100vw;
+  }
+  .forwardIconWorks {
+    left: 90% !important;
+  }
+}
 .ourwork {
   height: 100vh;
   padding: 0;
