@@ -100,6 +100,10 @@
 /*mobile version*/
 
 @media only screen and (max-width: 700px) {
+  .homepage {
+    background-image: url("../Images/homeMobile.png") !important;
+    background-size: cover;
+  }
   .reality {
     font-size: 8vw;
     line-height: 4vw;
