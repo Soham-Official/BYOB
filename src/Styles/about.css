@@ -13,9 +13,9 @@
   height: 40px;
   font-size: 17px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 210px;
+  width: 100% !important;
 }
 .aboutLowerText {
   font-size: 90px;
@@ -84,4 +84,27 @@
   line-height: 120px;
   background: rgba(0, 0, 0, 0.3);
   transform: scale(0.98);
+}
+@media only screen and (max-width: 1023px) {
+  .aboutLowerText {
+    font-size: 5vw !important;
+    line-height: 4vw;
+  }
+  .aboutTopText {
+    font-size: 2vw;
+    width: 100%;
+    border-left: 1.5px solid #fff;
+    padding-left: 10px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 210px;
+  }
+  .helpyou {
+    margin-left: 5px !important;
+  }
+  .x:hover {
+    line-height: 8vw;
+  }
 }

@@ -19,16 +19,16 @@ const Router = () => {
     };
   };
   useEffect(() => {
-    console.log(getWindowDimensions().width);
-    if (getWindowDimensions().width < 1024) {
-      setError(true);
-    } else {
-      setError(false);
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 6000);
-    }
+    // console.log(getWindowDimensions().width);
+    // if (getWindowDimensions().width < 1024) {
+    //   setError(true);
+    // } else {
+    //   setError(false);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 6000);
+    // }
   }, []);
   return (
     <>

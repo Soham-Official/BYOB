@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState, useLayoutEffect, useEffect } from "react";
 
 const Hamburger = () => {
+  const [w, setW] = useState("40");
+  function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
+  const [width] = useWindowSize();
+  useEffect(() => {
+    console.log(width);
+    if (width < 700) {
+      setW("25");
+    } else {
+      setW("40");
+    }
+  }, [width]);
   return (
     <div>
       <svg
-        width="40"
+        width={w}
         height="20"
         viewBox="0 0 44 26"
         fill="none"

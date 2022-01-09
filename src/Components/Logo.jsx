@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState, useLayoutEffect, useEffect } from "react";
 
 const Logo = () => {
+  const [w, setW] = useState("119.1");
+  function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
+  const [width] = useWindowSize();
+  useEffect(() => {
+    console.log(width);
+    if (width < 700) {
+      setW("80");
+    } else {
+      setW("119.1");
+    }
+  }, [width]);
   return (
     <div>
       <svg
-        width="119.1"
+        width={w}
         height="45"
         viewBox="0 0 572 228"
         fill="none"

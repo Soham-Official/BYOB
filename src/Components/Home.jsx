@@ -7,27 +7,27 @@ import Hamburger from "./Hamburger";
 import Error from "./Error";
 const Home = () => {
   const [error, setError] = useState(false);
-  function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-  }
-  const [width] = useWindowSize();
-  useEffect(() => {
-    console.log(width);
-    if (width < 1024) {
-      setError(true);
-    } else {
-      setError(false);
-    }
-  }, [width]);
+  // function useWindowSize() {
+  //   const [size, setSize] = useState([0, 0]);
+  //   useLayoutEffect(() => {
+  //     function updateSize() {
+  //       setSize([window.innerWidth, window.innerHeight]);
+  //     }
+  //     window.addEventListener("resize", updateSize);
+  //     updateSize();
+  //     return () => window.removeEventListener("resize", updateSize);
+  //   }, []);
+  //   return size;
+  // }
+  // const [width] = useWindowSize();
+  // useEffect(() => {
+  //   console.log(width);
+  //   if (width < 1024) {
+  //     setError(true);
+  //   } else {
+  //     setError(false);
+  //   }
+  // }, [width]);
   return (
     <>
       {error ? (

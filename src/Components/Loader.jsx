@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
+
 import "../Styles/loader.css";
 
 const Loader = () => {
+  const [w, setW] = useState("465");
+
+  function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
+  const [width] = useWindowSize();
+  useEffect(() => {
+    console.log(width);
+    if (width < 500) {
+      setW("250");
+    } else if (width >= 500 && width < 700) {
+      setW("350");
+    } else {
+      setW("465");
+    }
+  }, [width]);
   return (
     <>
       <div className="homeImg"></div>
@@ -23,7 +49,7 @@ const Loader = () => {
       <div className="loader">
         <svg
           id="svgLoader"
-          width="465"
+          width={w}
           height="46"
           viewBox="0 0 465 46"
           fill="none"
