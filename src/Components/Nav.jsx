@@ -38,12 +38,13 @@ const Nav = () => {
               id="home-navBar-back-container"
               style={{
                 top: "-4200px",
-                left: "-1100px",
                 paddingTop: "2968px",
                 paddingBottom: "2827px",
-                backgroundPosition: "1391px 985px",
+                backgroundPosition: `${window.innerWidth + 10}px 985px`,
+                left: `${-935 + ((1920 - window.innerWidth) / 10) * 5}px`,
               }}
             >
+              {console.log(935 - ((1920 - window.innerWidth) / 10) * 5)}
               <div id="back-sel1" className="home-navBar-back-item selected">
                 <div>
                   <div
@@ -282,7 +283,9 @@ const Nav = () => {
 const hoverChange = (el) => {
   //sizes
   let width = window.innerWidth;
-  let frontCon;
+  let frontCon,
+    backTop = -4200,
+    backLeft = -935 + ((1920 - window.innerWidth) / 10) * 5;
   if (width >= 1720) {
     frontCon = 700;
   } else if (width < 1720 && width >= 1520) {
@@ -340,10 +343,12 @@ const hoverChange = (el) => {
       document.getElementById("img-sel1").style.backgroundPosition =
         "-241px -1446px";
       //Home Back Position
-      document.getElementById("home-navBar-back-container").style.top =
-        "-4200px";
-      document.getElementById("home-navBar-back-container").style.left =
-        "-1100px";
+      document.getElementById(
+        "home-navBar-back-container"
+      ).style.top = `${backTop}px`;
+      document.getElementById(
+        "home-navBar-back-container"
+      ).style.left = `${backLeft}px`;
       break;
     case "hover2":
       //Navbar
@@ -363,10 +368,12 @@ const hoverChange = (el) => {
       document.getElementById("img-sel2").style.backgroundPosition =
         "-241px -1446px";
       //Home Back Position
-      document.getElementById("home-navBar-back-container").style.top =
-        "-4080px";
-      document.getElementById("home-navBar-back-container").style.left =
-        "-1220px";
+      document.getElementById("home-navBar-back-container").style.top = `${
+        backTop + 120
+      }px`;
+      document.getElementById("home-navBar-back-container").style.left = `${
+        backLeft - 120
+      }px`;
       break;
     case "hover3":
       //Navbar
@@ -386,10 +393,12 @@ const hoverChange = (el) => {
       document.getElementById("img-sel3").style.backgroundPosition =
         "-241px -1446px";
       //Home Back Position
-      document.getElementById("home-navBar-back-container").style.top =
-        "-3960px";
-      document.getElementById("home-navBar-back-container").style.left =
-        "-1340px";
+      document.getElementById("home-navBar-back-container").style.top = `${
+        backTop + 240
+      }px`;
+      document.getElementById("home-navBar-back-container").style.left = `${
+        backLeft - 240
+      }px`;
       break;
     case "hover4":
       //Navbar
@@ -409,10 +418,12 @@ const hoverChange = (el) => {
       document.getElementById("img-sel4").style.backgroundPosition =
         "-241px -1446px";
       //Home Back Position
-      document.getElementById("home-navBar-back-container").style.top =
-        "-3840px";
-      document.getElementById("home-navBar-back-container").style.left =
-        "-1460px";
+      document.getElementById("home-navBar-back-container").style.top = `${
+        backTop + 360
+      }px`;
+      document.getElementById("home-navBar-back-container").style.left = `${
+        backLeft - 360
+      }px`;
       break;
     default:
       console.log("default");

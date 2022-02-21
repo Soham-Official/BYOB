@@ -16,7 +16,6 @@ const Logo = () => {
   }
   const [width] = useWindowSize();
   useEffect(() => {
-    console.log(width);
     if (width < 700) {
       setW("80");
     } else {
