@@ -74,7 +74,7 @@ const Contact = () => {
                   <Logo />
                 </div>
               </div>
-              <div className="logoblack2">
+              <div className="logoblack2 pb-4">
                 <Link
                   to={{
                     pathname: "/nav",
@@ -104,7 +104,7 @@ const Contact = () => {
                 <p className="usat font-face-gl">US AT</p>
                 <p className="mailicon mt-5">
                   <i className="fa fa-envelope-o "></i>
-                  <span className="m-5 font-face-gl">
+                  <span className="m-5 font-face-gl mail">
                     hello.buildyourownbusiness@gmail.com
                   </span>
                 </p>

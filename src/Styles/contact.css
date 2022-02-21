@@ -147,4 +147,30 @@
   #white-box {
     display: none;
   }
+  .workTogether {
+    font-size: 13px;
+  }
+  .reach {
+    font-size: 50px;
+    line-height: 25px;
+  }
+  .usat {
+    font-size: 30px;
+  }
+  .mail {
+    font-size: 13px;
+    width: 50px !important;
+    /* margin: 0 !important;
+    margin-left: 15px !important; */
+  }
+  .nums,
+  .dial {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .mail {
+    margin: 0 !important;
+    margin-left: 10px !important;
+  }
 }
