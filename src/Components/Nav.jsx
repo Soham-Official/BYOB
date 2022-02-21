@@ -186,7 +186,7 @@ const Nav = () => {
                 home-navBar-front-item to home-navBar-front-item selected
         --> */}
           <div id="home-navBar-front">
-            <div id="home-navBar-front-container" style={{ left: "700px" }}>
+            <div id="home-navBar-front-container">
               <div id="nav-sel1" className="home-navBar-front-item selected">
                 <div className="title">
                   <div href="/#" className="font-face-gb">
@@ -280,6 +280,27 @@ const Nav = () => {
 };
 
 const hoverChange = (el) => {
+  //sizes
+  let width = window.innerWidth;
+  let frontCon;
+  if (width >= 1720) {
+    frontCon = 700;
+  } else if (width < 1720 && width >= 1520) {
+    frontCon = 600;
+  } else if (width < 1520 && width >= 1320) {
+    frontCon = 500;
+  } else if (width < 1320 && width >= 1120) {
+    frontCon = 400;
+  } else if (width < 1120 && width >= 920) {
+    frontCon = 300;
+  } else if (width < 920 && width >= 720) {
+    frontCon = 200;
+  } else if (width < 720 && width >= 520) {
+    frontCon = 100;
+  } else if (width < 520 && width >= 320) {
+    frontCon = 0;
+  }
+
   //Navbar
   document.getElementById("hover1").className = "navigator-navBar-item hover";
   document.getElementById("hover2").className = "navigator-navBar-item hover";
@@ -309,8 +330,9 @@ const hoverChange = (el) => {
       //Home Front
       document.getElementById("nav-sel1").className =
         "home-navBar-front-item selected";
-      document.getElementById("home-navBar-front-container").style.left =
-        "700px";
+      document.getElementById(
+        "home-navBar-front-container"
+      ).style.left = `${frontCon}px`;
       //Home Back
       document.getElementById("back-sel1").className =
         "home-navBar-back-item selected";
@@ -331,8 +353,9 @@ const hoverChange = (el) => {
       //Home Front
       document.getElementById("nav-sel2").className =
         "home-navBar-front-item selected";
-      document.getElementById("home-navBar-front-container").style.left =
-        "300px";
+      document.getElementById("home-navBar-front-container").style.left = `${
+        frontCon - 400
+      }px`;
       //Home Back
       document.getElementById("back-sel2").className =
         "home-navBar-back-item selected";
@@ -353,8 +376,9 @@ const hoverChange = (el) => {
       //Home Front
       document.getElementById("nav-sel3").className =
         "home-navBar-front-item selected";
-      document.getElementById("home-navBar-front-container").style.left =
-        "-200px";
+      document.getElementById("home-navBar-front-container").style.left = `${
+        frontCon - 900
+      }px`;
       //Home Back
       document.getElementById("back-sel3").className =
         "home-navBar-back-item selected";
@@ -375,8 +399,9 @@ const hoverChange = (el) => {
       //Home Front
       document.getElementById("nav-sel4").className =
         "home-navBar-front-item selected";
-      document.getElementById("home-navBar-front-container").style.left =
-        "-700px";
+      document.getElementById("home-navBar-front-container").style.left = `${
+        frontCon - 1400
+      }px`;
       //Home Back
       document.getElementById("back-sel4").className =
         "home-navBar-back-item selected";
