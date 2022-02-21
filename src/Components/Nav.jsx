@@ -44,7 +44,6 @@ const Nav = () => {
                 left: `${-935 + ((1920 - window.innerWidth) / 10) * 5}px`,
               }}
             >
-              {console.log(935 - ((1920 - window.innerWidth) / 10) * 5)}
               <div id="back-sel1" className="home-navBar-back-item selected">
                 <div>
                   <div
