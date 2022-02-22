@@ -62,6 +62,37 @@ const Ourwork = () => {
                 </Link>
               </div>
             </div>
+            <div className="ourPortfolio">
+              <p className="portfolio_our font-face-gl">OUR</p>
+              <p className="portfolio_portfolio font-face-gb">PORTFOLIO</p>
+              <svg
+                width="40"
+                height="10"
+                viewBox="0 0 639 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ marginTop: "-24px" }}
+                className="portfollio_Bar"
+              >
+                <path
+                  d="M0 18C0 8.05887 32.0618 0 71.6121 0H567.388C606.938 0 639 8.05887 639 18V18C639 27.9411 606.938 36 567.388 36H71.6121C32.0618 36 0 27.9411 0 18V18Z"
+                  fill="white"
+                />
+              </svg>
+              {/* <svg
+                width="40"
+                height="10"
+                viewBox="0 0 522 117"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                
+              >
+                <path
+                  d="M0 58.5C0 26.1913 26.1913 0 58.5 0H463.5C495.809 0 522 26.1913 522 58.5V58.5C522 90.8087 495.809 117 463.5 117H58.5C26.1913 117 0 90.8087 0 58.5V58.5Z"
+                  fill="white"
+                />
+              </svg> */}
+            </div>
           </div>
         </div>
         <div className="row aboutrow">
