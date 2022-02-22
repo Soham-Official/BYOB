@@ -282,3 +282,35 @@
     left: 0px;
   }
 }
+
+@media (pointer: coarse) {
+  .backNav {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    z-index: 1000;
+  }
+
+  .frontNav {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    z-index: 1000;
+  }
+}
+
+@media (pointer: none) {
+  .backNav {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    z-index: 1000;
+  }
+
+  .frontNav {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    z-index: 1000;
+  }
+}

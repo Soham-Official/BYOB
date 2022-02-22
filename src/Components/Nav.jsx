@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/nav.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import nav1 from "../Images/nav1.png";
 import nav2 from "../Images/nav2.png";
 import nav3 from "../Images/nav3.png";
@@ -8,9 +8,7 @@ import nav4 from "../Images/nav4.png";
 import sprite from "../Images/sprite.png";
 import Logo from "./Logo";
 const Nav = () => {
-  const location = useLocation();
-  const { from } = location.state;
-  const [onPage, setPageChange] = useState(from);
+  const [onPage, setPageChange] = useState("/");
 
   return (
     <>
@@ -24,6 +22,52 @@ const Nav = () => {
           <i className="fa fa-linkedin-square"></i>
           <i className="fa fa-twitter"></i>
           <i className="fa fa-pinterest"></i>
+        </div>
+        <div
+          className="backNav"
+          onClick={() => {
+            if (onPage === "/") {
+              setPageChange("/contact");
+              hoverChange("hover4");
+            }
+            if (onPage === "/about") {
+              setPageChange("/");
+              hoverChange("hover1");
+            }
+            if (onPage === "/ourwork") {
+              setPageChange("/about");
+              hoverChange("hover2");
+            }
+            if (onPage === "/contact") {
+              setPageChange("/ourwork");
+              hoverChange("hover3");
+            }
+          }}
+        >
+          <i className="fa fa-angle-left fa-2x"></i>
+        </div>
+        <div
+          className="frontNav"
+          onClick={() => {
+            if (onPage === "/") {
+              setPageChange("/about");
+              hoverChange("hover2");
+            }
+            if (onPage === "/about") {
+              setPageChange("/ourwork");
+              hoverChange("hover3");
+            }
+            if (onPage === "/ourwork") {
+              setPageChange("/contact");
+              hoverChange("hover4");
+            }
+            if (onPage === "/contact") {
+              setPageChange("/");
+              hoverChange("hover1");
+            }
+          }}
+        >
+          <i className="fa fa-angle-right fa-2x"></i>
         </div>
         <Link id="main-navBar-home" to={onPage}>
           {/* <!-- The background mosaic with the visuals moving in diagonal -->
