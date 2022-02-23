@@ -81,7 +81,6 @@ const Nav = () => {
             <div
               id="home-navBar-back-container"
               style={{
-                top: "-4200px",
                 paddingTop: "2968px",
                 paddingBottom: "2827px",
                 backgroundPosition: `${window.innerWidth + 10}px 985px`,

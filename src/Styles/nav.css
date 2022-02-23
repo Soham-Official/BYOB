@@ -34,7 +34,6 @@
   background-image: url("../Images/background.gif");
   background-position: 0px 0px;
   position: absolute;
-  top: 0px;
   left: 0px;
   padding-left: 100%;
   padding-right: 100%;
@@ -343,5 +342,47 @@
     font-size: 12px;
     letter-spacing: 5px;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  #home-navBar-back-container {
+    top: -4200px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 939px) {
+  #home-navBar-back-container {
+    top: -4230px;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 899px) {
+  #home-navBar-back-container {
+    top: -4250px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 839px) {
+  #home-navBar-back-container {
+    top: -4270px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 799px) {
+  #home-navBar-back-container {
+    top: -4300px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 739px) {
+  #home-navBar-back-container {
+    top: -4310px;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 699px) {
+  #home-navBar-back-container {
+    top: -4350px;
   }
 }
