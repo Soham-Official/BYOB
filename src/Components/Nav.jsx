@@ -237,7 +237,6 @@ const Nav = () => {
                     HOME
                   </div>
                 </div>
-                <div className="description">Lorem ipsum dolor sit amet.</div>
               </div>
               <div id="nav-sel2" className="home-navBar-front-item">
                 <div className="title">
@@ -245,7 +244,6 @@ const Nav = () => {
                     WHAT DO WE DO?
                   </div>
                 </div>
-                <div className="description">Lorem ipsum dolor sit amet.</div>
               </div>
               <div id="nav-sel3" className="home-navBar-front-item">
                 <div className="title">
@@ -253,7 +251,6 @@ const Nav = () => {
                     OUR WORKS
                   </div>
                 </div>
-                <div className="description">Lorem ipsum dolor sit amet.</div>
               </div>
               <div id="nav-sel4" className="home-navBar-front-item">
                 <div className="title">
@@ -261,7 +258,6 @@ const Nav = () => {
                     CONTACT US
                   </div>
                 </div>
-                <div className="description">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
           </div>

@@ -121,7 +121,6 @@
 }
 .home-navBar-front-item div.title div {
   font-size: 34px;
-  color: #383838;
   letter-spacing: 9px;
   text-decoration: none;
 }
@@ -312,5 +311,37 @@
     bottom: 15px;
     right: 10px;
     z-index: 1000;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-navBar-front-item div.title div {
+    font-size: 26px;
+    letter-spacing: 9px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-navBar-front-item div.title div {
+    font-size: 18px;
+    letter-spacing: 9px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .home-navBar-front-item div.title div {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .home-navBar-front-item div.title div {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-decoration: none;
   }
 }
