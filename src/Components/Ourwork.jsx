@@ -34,6 +34,22 @@ const Ourwork = () => {
         </Link>
 
         <div className="row aboutrow " style={{ zIndex: "999" }}>
+          <div
+            className="col-md-6 img1"
+            onClick={() => {
+              setModalHide("modal-blur");
+              setModalContentHide("modal-content");
+              setModalimg("img1");
+            }}
+          ></div>
+          <div
+            className="col-md-6 img2"
+            onClick={() => {
+              setModalHide("modal-blur");
+              setModalContentHide("modal-content");
+              setModalimg("img2");
+            }}
+          ></div>
           <div className="container p-4 ourworknav" style={{ zIndex: "1" }}>
             <div className="d-flex justify-content-between ">
               <div className="text-white">
@@ -66,22 +82,6 @@ const Ourwork = () => {
               </svg>
             </div>
           </div>
-          <div
-            className="col-md-6 img1"
-            onClick={() => {
-              setModalHide("modal-blur");
-              setModalContentHide("modal-content");
-              setModalimg("img1");
-            }}
-          ></div>
-          <div
-            className="col-md-6 img2"
-            onClick={() => {
-              setModalHide("modal-blur");
-              setModalContentHide("modal-content");
-              setModalimg("img2");
-            }}
-          ></div>
         </div>
         <div className="row aboutrow">
           <div
