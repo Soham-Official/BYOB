@@ -16,7 +16,6 @@ const Hamburger = () => {
   }
   const [width] = useWindowSize();
   useEffect(() => {
-    console.log(width);
     if (width < 700) {
       setW("25");
     } else {

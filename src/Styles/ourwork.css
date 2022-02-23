@@ -99,7 +99,7 @@
 }
 
 .backIconWorks {
-  position: absolute;
+  position: fixed;
   left: 1.7%;
   top: 50.7%;
   text-decoration: none;
@@ -107,7 +107,7 @@
 }
 
 .forwardIconWorks {
-  position: absolute;
+  position: fixed;
   left: 98%;
   top: 50.7%;
   /* align-items: center;
