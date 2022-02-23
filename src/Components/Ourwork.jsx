@@ -32,24 +32,9 @@ const Ourwork = () => {
         <Link className="backIconWorks" to="/about">
           <i className="fas fa-angle-left fa-2x"></i>
         </Link>
-        <div className="row aboutrow">
-          <div
-            className="col-md-6 img1"
-            onClick={() => {
-              setModalHide("modal-blur");
-              setModalContentHide("modal-content");
-              setModalimg("img1");
-            }}
-          ></div>
-          <div
-            className="col-md-6 img2"
-            onClick={() => {
-              setModalHide("modal-blur");
-              setModalContentHide("modal-content");
-              setModalimg("img2");
-            }}
-          ></div>
-          <div className="container p-4 ourworknav">
+
+        <div className="row aboutrow " style={{ zIndex: "999" }}>
+          <div className="container p-4 ourworknav" style={{ zIndex: "1" }}>
             <div className="d-flex justify-content-between ">
               <div className="text-white">
                 <div className="">
@@ -79,21 +64,24 @@ const Ourwork = () => {
                   fill="white"
                 />
               </svg>
-              {/* <svg
-                width="40"
-                height="10"
-                viewBox="0 0 522 117"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                
-              >
-                <path
-                  d="M0 58.5C0 26.1913 26.1913 0 58.5 0H463.5C495.809 0 522 26.1913 522 58.5V58.5C522 90.8087 495.809 117 463.5 117H58.5C26.1913 117 0 90.8087 0 58.5V58.5Z"
-                  fill="white"
-                />
-              </svg> */}
             </div>
           </div>
+          <div
+            className="col-md-6 img1"
+            onClick={() => {
+              setModalHide("modal-blur");
+              setModalContentHide("modal-content");
+              setModalimg("img1");
+            }}
+          ></div>
+          <div
+            className="col-md-6 img2"
+            onClick={() => {
+              setModalHide("modal-blur");
+              setModalContentHide("modal-content");
+              setModalimg("img2");
+            }}
+          ></div>
         </div>
         <div className="row aboutrow">
           <div
@@ -105,8 +93,8 @@ const Ourwork = () => {
             }}
           ></div>
           <div className="col-md-6 flex" style={{ padding: 0 }}>
-            <div className="d-flex">
-              <div className="d-flex" style={{ flexDirection: "column" }}>
+            <div className="d-flex test1">
+              <div className="d-flex test" style={{ flexDirection: "" }}>
                 <div className="img4"></div>
                 <div
                   className="img5"

@@ -55,7 +55,9 @@
 @media only screen and (max-width: 1023px) {
   .img1,
   .img2 {
-    width: 50vw;
+    width: 100vw;
+  }
+  .img1 {
     margin-top: 23vh;
   }
   .img3 {
@@ -65,11 +67,11 @@
     display: none;
   }
   .img5 {
-    width: 50vw;
+    width: 100vw;
     height: 50vh;
   }
   .img6 {
-    width: 50vw;
+    width: 100vw;
   }
   .flex {
     width: 100vw;
@@ -80,6 +82,9 @@
   .ourPortfolio {
     display: block !important;
     margin-top: 22px !important;
+  }
+  .test1 {
+    flex-direction: column !important;
   }
 }
 .ourwork {
@@ -180,4 +185,7 @@
 .ourPortfolio {
   display: none;
   text-align: center;
+}
+.test {
+  flex-direction: column;
 }
