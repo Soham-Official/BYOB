@@ -114,29 +114,6 @@ const Ourwork = () => {
                 }}
               ></div>
             </div>
-            {/* <div className="row flex">
-                <div className="col-6 ">
-                  <div
-                    className="row img4 "
-                  ></div>
-                  <div
-                    className="row img5"
-                    onClick={() => {
-                      setModalHide("modal-blur");
-                      setModalContentHide("modal-content");
-                      setModalimg("img5");
-                    }}
-                  ></div>
-                </div>
-                <div
-                  className="col-6 img6"
-                  onClick={() => {
-                    setModalHide("modal-blur");
-                    setModalContentHide("modal-content");
-                    setModalimg("img6");
-                  }}
-                ></div>
-              </div> */}
           </div>
         </div>
         <Link className="forwardIconWorks" to="/contact">
