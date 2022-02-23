@@ -12,6 +12,7 @@ const Nav = () => {
 
   return (
     <>
+      <div className="hideLowerNavBar"></div>
       <div className="navBar-container">
         <div id="logo-navBar">
           <Logo />
@@ -340,6 +341,27 @@ const hoverChange = (el) => {
     frontCon = 100;
   } else if (width < 520 && width >= 320) {
     frontCon = 0;
+  }
+
+  let height = window.innerHeight;
+  if (height >= 940) {
+    backTop = -4200;
+  } else if (height < 940 && height >= 900) {
+    backTop = -4230;
+  } else if (height < 900 && height >= 840) {
+    backTop = -4250;
+  } else if (height < 840 && height >= 800) {
+    backTop = -4270;
+  } else if (height < 800 && height >= 740) {
+    backTop = -4300;
+  } else if (height < 740 && height >= 700) {
+    backTop = -4310;
+  } else if (height < 700 && height >= 660) {
+    backTop = -4350;
+  } else if (height < 660 && height >= 600) {
+    backTop = -4370;
+  } else if (height < 600 && height >= 560) {
+    backTop = -4390;
   }
 
   //Navbar
