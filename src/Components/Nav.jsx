@@ -44,6 +44,9 @@ const Nav = () => {
               hoverChange("hover3");
             }
           }}
+          style={{
+            left: `${240.5 - (600 - window.innerWidth) / 2 - 30}px`,
+          }}
         >
           <i className="fa fa-angle-left fa-2x"></i>
         </div>
@@ -66,6 +69,9 @@ const Nav = () => {
               setPageChange("/");
               hoverChange("hover1");
             }
+          }}
+          style={{
+            left: `${330.5 - (600 - window.innerWidth) / 2 + 50}px`,
           }}
         >
           <i className="fa fa-angle-right fa-2x"></i>

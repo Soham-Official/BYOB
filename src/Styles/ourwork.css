@@ -5,9 +5,9 @@
   height: 50vh;
   width: 50vw;
   background-image: url("../Images/bangkok.jpg");
-  background-size: 100%;
+  background-size: cover;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 .img2 {
@@ -15,7 +15,7 @@
   width: 50vw;
   background-position: center;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../Images/dubai.jpg");
   background-position-y: bottom;
 }
@@ -24,7 +24,7 @@
   width: 50vw;
   background-position: center;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../Images/diamond.jpg");
   background-position: center;
 }
@@ -33,7 +33,7 @@
   width: 25vw;
   background-position: center;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../Images/dice.jfif");
 }
 .img5 {
@@ -41,7 +41,7 @@
   width: 25vw;
   background-position: center;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../Images/diamond1.jpg");
 }
 .img6 {
@@ -49,29 +49,34 @@
   width: 25vw;
   background-position: center;
   transition: all 0.5s ease;
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../Images/tubecoffee.jpg");
 }
 @media only screen and (max-width: 1023px) {
   .img1,
   .img2 {
     width: 100vw;
+    height: 40vh;
   }
   .img1 {
     margin-top: 23vh;
+    height: 40vh;
   }
   .img3 {
     width: 100vw;
+    height: 40vh;
   }
   .img4 {
     display: none;
+    height: 40vh;
   }
   .img5 {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
   }
   .img6 {
     width: 100vw;
+    height: 40vh;
   }
   .flex {
     width: 100vw;

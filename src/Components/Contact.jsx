@@ -105,7 +105,7 @@ const Contact = () => {
                 <p className="mailicon mt-5">
                   <i className="fa fa-envelope-o "></i>
                   <span className="m-5 font-face-gl mail">
-                    hello.buildyourownbusiness@gmail.com
+                    byob@buildyourownbrand.co.in
                   </span>
                 </p>
                 <p className="dials mt-5 ">
@@ -127,7 +127,6 @@ const Contact = () => {
                   <i className="fa fa-instagram"></i>
                   <i className="fa fa-linkedin-square"></i>
                   <i className="fa fa-twitter"></i>
-                  <i className="fa fa-pinterest"></i>
                 </div>
               </div>
             </div>
